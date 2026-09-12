@@ -1,0 +1,705 @@
+{
+ "source": {
+  "record": "decision_20260912T111900Z.json",
+  "built_at": "2026-09-12T22:15:53Z",
+  "gameweeks_scanned": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "gameweeks": [
+  {
+   "gw": 1,
+   "settled": true,
+   "cohorts": [
+    {
+     "key": "zero_minute_floor",
+     "label": "zero-minute floor cohort",
+     "directive": "prereg_zero_minute_floor.md",
+     "lines": [
+      "Gy\u00f6keres     GW1 minutes    0, GW1 pts 0",
+      "Zirkzee      GW1 minutes    0, GW1 pts 0",
+      "A\u00eft-Nouri    GW1 minutes    0, GW1 pts 0",
+      "-> 0 of 3 have now played. Rule: none = vindicated; two or more = the floor is too blunt and the follow-up reads news/player-level odds, NOT a re-tuned floor."
+     ],
+     "status": "0/3 played"
+    },
+    {
+     "key": "paired_tzolakis_becker",
+     "label": "paired test Tzolakis vs A.Becker",
+     "directive": "sunday_gw3_readout.md",
+     "lines": [
+      "Tzolakis 10, A.Becker 2, hit charged 0",
+      "-> Tzolakis needed >2 to justify the swap; CLEARED (+8)"
+     ],
+     "status": "CLEARED"
+    },
+    {
+     "key": "transfer_pairs",
+     "label": "each transfer, separately",
+     "directive": "hit_must_clear_h1.md",
+     "lines": [
+      "Osula            4 -> Barry            8     +4",
+      "combined swing +4, charge 0, NET +4",
+      "-> stated per-pair because a free transfer that wins can carry a paid one that loses; the package total alone cannot show that."
+     ],
+     "status": "NET +4",
+     "pairs": [
+      {
+       "out": "Osula",
+       "out_element": 465,
+       "out_pts": 4,
+       "in": "Barry",
+       "in_element": 249,
+       "in_pts": 8,
+       "net": 4,
+       "paid": false
+      }
+     ]
+    },
+    {
+     "key": "n_derivation",
+     "label": "appearance counts",
+     "directive": "prereg_n_derivation_recheck.md",
+     "lines": [
+      "no appearance_sources on this record \u2014 it predates the field, so every count came from the quotient."
+     ],
+     "status": null
+    }
+   ],
+   "entry_actual": {
+    "active_chip": null,
+    "multiplier_by_element": {
+     "82": 1,
+     "4": 1,
+     "8": 1,
+     "115": 1,
+     "12": 1,
+     "260": 1,
+     "397": 1,
+     "415": 1,
+     "165": 1,
+     "411": 2,
+     "249": 1,
+     "497": 0,
+     "46": 0,
+     "259": 0,
+     "151": 0
+    },
+    "xi_elements": [
+     4,
+     8,
+     12,
+     82,
+     115,
+     165,
+     249,
+     260,
+     397,
+     411,
+     415
+    ],
+    "captain_element": 411,
+    "captain_multiplier": 2,
+    "official_points_gross": 75,
+    "transfer_cost": 0,
+    "official_points_net": 75
+   },
+   "xi": {
+    "projected": 63.1,
+    "actual": 75,
+    "diff": 11.9,
+    "rows": [
+     {
+      "player": "Haaland",
+      "element": 411,
+      "proj": 8.27,
+      "actual": 2,
+      "multiplier": 2,
+      "diff": -6.27
+     },
+     {
+      "player": "Saka",
+      "element": 12,
+      "proj": 6.97,
+      "actual": 9,
+      "multiplier": 1,
+      "diff": 2.03
+     },
+     {
+      "player": "Gabriel",
+      "element": 4,
+      "proj": 6.17,
+      "actual": 5,
+      "multiplier": 1,
+      "diff": -1.17
+     },
+     {
+      "player": "Semenyo",
+      "element": 397,
+      "proj": 6.15,
+      "actual": 2,
+      "multiplier": 1,
+      "diff": -4.15
+     },
+     {
+      "player": "Jo\u00e3o Pedro",
+      "element": 165,
+      "proj": 5.86,
+      "actual": 11,
+      "multiplier": 1,
+      "diff": 5.14
+     },
+     {
+      "player": "Barry",
+      "element": 249,
+      "proj": 5.72,
+      "actual": 8,
+      "multiplier": 1,
+      "diff": 2.28
+     },
+     {
+      "player": "Calafiori",
+      "element": 8,
+      "proj": 5.52,
+      "actual": 9,
+      "multiplier": 1,
+      "diff": 3.48
+     },
+     {
+      "player": "Wilson",
+      "element": 260,
+      "proj": 5.18,
+      "actual": 3,
+      "multiplier": 1,
+      "diff": -2.18
+     },
+     {
+      "player": "Dorgu",
+      "element": 415,
+      "proj": 4.84,
+      "actual": 0,
+      "multiplier": 1,
+      "diff": -4.84
+     },
+     {
+      "player": "De Cuyper",
+      "element": 115,
+      "proj": 4.78,
+      "actual": 17,
+      "multiplier": 1,
+      "diff": 12.22
+     },
+     {
+      "player": "Kelleher",
+      "element": 82,
+      "proj": 3.64,
+      "actual": 7,
+      "multiplier": 1,
+      "diff": 3.36
+     }
+    ],
+    "source": "fpl_picks_multiplier",
+    "reconciled_to_official": true,
+    "official_points_gross": 75,
+    "official_points_net": 75,
+    "transfer_cost": 0
+   },
+   "captain": {
+    "player": "Haaland",
+    "element": 411,
+    "projected": 8.27,
+    "actual": 2,
+    "multiplier": 2,
+    "total": 4,
+    "chip_played": null,
+    "source": "fpl_picks"
+   }
+  },
+  {
+   "gw": 2,
+   "settled": true,
+   "cohorts": [
+    {
+     "key": "zero_minute_floor",
+     "label": "zero-minute floor cohort",
+     "directive": "prereg_zero_minute_floor.md",
+     "lines": [
+      "Gy\u00f6keres     GW2 minutes    0, GW2 pts 0",
+      "Zirkzee      GW2 minutes    0, GW2 pts 0",
+      "A\u00eft-Nouri    GW2 minutes    0, GW2 pts 0",
+      "-> 0 of 3 have now played. Rule: none = vindicated; two or more = the floor is too blunt and the follow-up reads news/player-level odds, NOT a re-tuned floor."
+     ],
+     "status": "0/3 played"
+    },
+    {
+     "key": "paired_tzolakis_becker",
+     "label": "paired test Tzolakis vs A.Becker",
+     "directive": "sunday_gw3_readout.md",
+     "lines": [
+      "Tzolakis 10, A.Becker 0, hit charged 0",
+      "-> Tzolakis needed >0 to justify the swap; CLEARED (+10)"
+     ],
+     "status": "CLEARED"
+    },
+    {
+     "key": "wildcard_counterfactual",
+     "label": "WILDCARD COUNTERFACTUAL",
+     "directive": "chip_priority_masks_eligibility.md",
+     "lines": [
+      "proposed wildcard XI scored 61",
+      "the XI actually held scored  61",
+      "-> holding the wildcard was worth +0 points this week",
+      "Both XIs are read from decision records, not reconstructed. One gameweek scores the DECISION, not the chip: a wildcard is a 5-gameweek claim and this is the first of them."
+     ],
+     "status": "+0 pts vs wildcard"
+    },
+    {
+     "key": "n_derivation",
+     "label": "appearance counts",
+     "directive": "prereg_n_derivation_recheck.md",
+     "lines": [
+      "no appearance_sources on this record \u2014 it predates the field, so every count came from the quotient."
+     ],
+     "status": null
+    }
+   ],
+   "entry_actual": {
+    "active_chip": null,
+    "multiplier_by_element": {
+     "350": 1,
+     "4": 1,
+     "8": 1,
+     "115": 1,
+     "151": 1,
+     "12": 1,
+     "260": 1,
+     "397": 1,
+     "165": 1,
+     "249": 1,
+     "411": 2,
+     "497": 0,
+     "46": 0,
+     "415": 0,
+     "259": 0
+    },
+    "xi_elements": [
+     4,
+     8,
+     12,
+     115,
+     151,
+     165,
+     249,
+     260,
+     350,
+     397,
+     411
+    ],
+    "captain_element": 411,
+    "captain_multiplier": 2,
+    "official_points_gross": 74,
+    "transfer_cost": 0,
+    "official_points_net": 74
+   },
+   "warnings": [
+    "decision record's XI does not match FPL's own picks for this gameweek -- record: [4, 8, 12, 115, 165, 249, 260, 350, 397, 411, 415], FPL: [4, 8, 12, 115, 151, 165, 249, 260, 350, 397, 411]. The 'projected vs actual' comparison below uses the RECORD's XI (what the system says it proposed), which may not be what was actually played."
+   ],
+   "xi": {
+    "projected": 32.6,
+    "actual": 73,
+    "diff": 40.4,
+    "rows": [
+     {
+      "player": "Haaland",
+      "element": 411,
+      "proj": 4.65,
+      "actual": 13,
+      "multiplier": 2,
+      "diff": 8.35
+     },
+     {
+      "player": "Gabriel",
+      "element": 4,
+      "proj": 3.68,
+      "actual": 8,
+      "multiplier": 1,
+      "diff": 4.32
+     },
+     {
+      "player": "Saka",
+      "element": 12,
+      "proj": 3.5,
+      "actual": 11,
+      "multiplier": 1,
+      "diff": 7.5
+     },
+     {
+      "player": "Semenyo",
+      "element": 397,
+      "proj": 3.16,
+      "actual": 5,
+      "multiplier": 1,
+      "diff": 1.84
+     },
+     {
+      "player": "A.Becker",
+      "element": 350,
+      "proj": 2.96,
+      "actual": 0,
+      "multiplier": 1,
+      "diff": -2.96
+     },
+     {
+      "player": "Jo\u00e3o Pedro",
+      "element": 165,
+      "proj": 2.84,
+      "actual": 9,
+      "multiplier": 1,
+      "diff": 6.16
+     },
+     {
+      "player": "Wilson",
+      "element": 260,
+      "proj": 2.66,
+      "actual": 1,
+      "multiplier": 1,
+      "diff": -1.66
+     },
+     {
+      "player": "Calafiori",
+      "element": 8,
+      "proj": 2.64,
+      "actual": 11,
+      "multiplier": 1,
+      "diff": 8.36
+     },
+     {
+      "player": "Dorgu",
+      "element": 415,
+      "proj": 2.42,
+      "actual": 1,
+      "multiplier": 0,
+      "diff": -1.42
+     },
+     {
+      "player": "Barry",
+      "element": 249,
+      "proj": 2.17,
+      "actual": 2,
+      "multiplier": 1,
+      "diff": -0.17
+     },
+     {
+      "player": "De Cuyper",
+      "element": 115,
+      "proj": 1.94,
+      "actual": 0,
+      "multiplier": 1,
+      "diff": -1.94
+     }
+    ],
+    "source": "fpl_picks_multiplier",
+    "reconciled_to_official": false,
+    "official_points_gross": 74,
+    "official_points_net": 74,
+    "transfer_cost": 0
+   },
+   "captain": {
+    "player": "Haaland",
+    "element": 411,
+    "projected": 4.65,
+    "actual": 13,
+    "multiplier": 2,
+    "total": 26,
+    "chip_played": null,
+    "source": "fpl_picks"
+   }
+  },
+  {
+   "gw": 3,
+   "settled": true,
+   "cohorts": [
+    {
+     "key": "zero_minute_floor",
+     "label": "zero-minute floor cohort",
+     "directive": "prereg_zero_minute_floor.md",
+     "lines": [
+      "Gy\u00f6keres     GW3 minutes   12, GW3 pts 1",
+      "Zirkzee      GW3 minutes    0, GW3 pts 0",
+      "A\u00eft-Nouri    GW3 minutes    0, GW3 pts 0",
+      "-> 1 of 3 have now played. Rule: none = vindicated; two or more = the floor is too blunt and the follow-up reads news/player-level odds, NOT a re-tuned floor."
+     ],
+     "status": "1/3 played"
+    },
+    {
+     "key": "paired_tzolakis_becker",
+     "label": "paired test Tzolakis vs A.Becker",
+     "directive": "sunday_gw3_readout.md",
+     "lines": [
+      "Tzolakis 6, A.Becker 8, hit charged 4",
+      "-> Tzolakis needed >12 to justify the swap; DID NOT CLEAR (-6)"
+     ],
+     "status": "DID NOT CLEAR"
+    },
+    {
+     "key": "wildcard_counterfactual",
+     "label": "WILDCARD COUNTERFACTUAL",
+     "directive": "chip_priority_masks_eligibility.md",
+     "lines": [
+      "proposed wildcard XI scored 49",
+      "the XI actually held scored  37",
+      "-> holding the wildcard was worth -12 points this week",
+      "Both XIs are read from decision records, not reconstructed. One gameweek scores the DECISION, not the chip: a wildcard is a 5-gameweek claim and this is the first of them."
+     ],
+     "status": "-12 pts vs wildcard"
+    },
+    {
+     "key": "hit_guard",
+     "label": "hit guard",
+     "directive": "hit_must_clear_h1.md",
+     "lines": [
+      "in ['Tzolakis', 'M.Sangar\u00e9'] scored 6",
+      "out ['Dubravka', 'Wilson'] scored 0",
+      "-> net +2 after the 4-point charge (PAID OFF)",
+      "NOTE: this is the PACKAGE. The guard tests each paid swap against the player it displaces, which needs the XI, not the transfer pair."
+     ],
+     "status": "PAID OFF"
+    },
+    {
+     "key": "transfer_pairs",
+     "label": "each transfer, separately",
+     "directive": "hit_must_clear_h1.md",
+     "lines": [
+      "Dubravka         0 -> Tzolakis         6     +6",
+      "Wilson           0 -> M.Sangar\u00e9        0     +0",
+      "combined swing +6, charge 4, NET +2",
+      "-> stated per-pair because a free transfer that wins can carry a paid one that loses; the package total alone cannot show that."
+     ],
+     "status": "NET +2",
+     "pairs": [
+      {
+       "out": "Dubravka",
+       "out_element": 497,
+       "out_pts": 0,
+       "in": "Tzolakis",
+       "in_element": 572,
+       "in_pts": 6,
+       "net": 6,
+       "paid": true
+      },
+      {
+       "out": "Wilson",
+       "out_element": 260,
+       "out_pts": 0,
+       "in": "M.Sangar\u00e9",
+       "in_element": 565,
+       "in_pts": 0,
+       "net": 0,
+       "paid": false
+      }
+     ]
+    },
+    {
+     "key": "hit_hurdle_position",
+     "label": "positional hit hurdle",
+     "directive": "hit_hurdle_by_position.md",
+     "lines": [
+      "Tzolakis (GKP/DEF) scored 6 against a 4-point charge",
+      "-> a flat hit is ~1.5x harder to clear at GKP/DEF than at MID/FWD; one gameweek is one observation, and the pre-registered check is a GW6 count of where hits were proposed."
+     ],
+     "status": null
+    },
+    {
+     "key": "no_prior_arms",
+     "label": "no-prior arms",
+     "directive": "prereg_no_prior_shrinkage_target.md",
+     "lines": [
+      "345 of 652 players had no last-season record and were steadied against PRICE (arm D, live).",
+      "-> the offline comparison of arms A/B/C/D against actual points is the answer; this line only records which arm was live for GW3."
+     ],
+     "status": "345/652 no-prior"
+    },
+    {
+     "key": "n_derivation",
+     "label": "appearance counts",
+     "directive": "prereg_n_derivation_recheck.md",
+     "lines": [
+      "no appearance_sources on this record \u2014 it predates the field, so every count came from the quotient."
+     ],
+     "status": null
+    },
+    {
+     "key": "josh_vs_model",
+     "label": "Josh vs the model, GW3 leg",
+     "directive": "prereg_josh_vs_model.md",
+     "lines": [
+      "Wissa          1  vs  Gonzalo        2   -> model",
+      "Schade         2  vs  M.Sangar\u00e9      0   -> JOSH",
+      "Szoboszlai     3  vs  Foden          1   -> JOSH",
+      "Ajer           2  vs  De Cuyper      4   -> model",
+      "GW3 totals: Josh 8, model 7",
+      "-> ONE LEG of three (GW3-5). Four pairs over one gameweek is four coin flips; the decision rule is in the directive and applies to the CUMULATIVE result."
+     ],
+     "status": "Josh 8 \u2014 model 7"
+    }
+   ],
+   "entry_actual": {
+    "active_chip": "3xc",
+    "multiplier_by_element": {
+     "572": 1,
+     "4": 1,
+     "8": 1,
+     "115": 1,
+     "46": 1,
+     "12": 1,
+     "565": 1,
+     "397": 1,
+     "165": 1,
+     "249": 1,
+     "411": 3,
+     "350": 0,
+     "151": 0,
+     "415": 0,
+     "259": 0
+    },
+    "xi_elements": [
+     4,
+     8,
+     12,
+     46,
+     115,
+     165,
+     249,
+     397,
+     411,
+     565,
+     572
+    ],
+    "captain_element": 411,
+    "captain_multiplier": 3,
+    "official_points_gross": 55,
+    "transfer_cost": 4,
+    "official_points_net": 51
+   },
+   "xi": {
+    "projected": 78.3,
+    "actual": 55,
+    "diff": -23.3,
+    "rows": [
+     {
+      "player": "Haaland",
+      "element": 411,
+      "proj": 11.71,
+      "actual": 9,
+      "multiplier": 3,
+      "diff": -2.71
+     },
+     {
+      "player": "M.Sangar\u00e9",
+      "element": 565,
+      "proj": 8.85,
+      "actual": 0,
+      "multiplier": 1,
+      "diff": -8.85
+     },
+     {
+      "player": "Saka",
+      "element": 12,
+      "proj": 8.08,
+      "actual": 2,
+      "multiplier": 1,
+      "diff": -6.08
+     },
+     {
+      "player": "Semenyo",
+      "element": 397,
+      "proj": 8.03,
+      "actual": 6,
+      "multiplier": 1,
+      "diff": -2.03
+     },
+     {
+      "player": "Tzolakis",
+      "element": 572,
+      "proj": 6.77,
+      "actual": 6,
+      "multiplier": 1,
+      "diff": -0.77
+     },
+     {
+      "player": "De Cuyper",
+      "element": 115,
+      "proj": 6.74,
+      "actual": 4,
+      "multiplier": 1,
+      "diff": -2.74
+     },
+     {
+      "player": "Calafiori",
+      "element": 8,
+      "proj": 6.38,
+      "actual": 2,
+      "multiplier": 1,
+      "diff": -4.38
+     },
+     {
+      "player": "Gabriel",
+      "element": 4,
+      "proj": 6.24,
+      "actual": 2,
+      "multiplier": 1,
+      "diff": -4.24
+     },
+     {
+      "player": "Jo\u00e3o Pedro",
+      "element": 165,
+      "proj": 6.22,
+      "actual": 1,
+      "multiplier": 1,
+      "diff": -5.22
+     },
+     {
+      "player": "Barry",
+      "element": 249,
+      "proj": 4.98,
+      "actual": 2,
+      "multiplier": 1,
+      "diff": -2.98
+     },
+     {
+      "player": "Barkley",
+      "element": 46,
+      "proj": 4.33,
+      "actual": 3,
+      "multiplier": 1,
+      "diff": -1.33
+     }
+    ],
+    "source": "fpl_picks_multiplier",
+    "reconciled_to_official": true,
+    "official_points_gross": 55,
+    "official_points_net": 51,
+    "transfer_cost": 4
+   },
+   "captain": {
+    "player": "Haaland",
+    "element": 411,
+    "projected": 11.71,
+    "actual": 9,
+    "multiplier": 3,
+    "total": 27,
+    "chip_played": "3xc",
+    "source": "fpl_picks"
+   }
+  },
+  {
+   "gw": 4,
+   "settled": false,
+   "reason": "(finished=False data_checked=False)"
+  }
+ ],
+ "decisions": []
+}

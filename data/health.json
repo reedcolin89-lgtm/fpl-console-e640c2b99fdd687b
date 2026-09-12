@@ -1,0 +1,148 @@
+{
+ "source": {
+  "built_at": "2026-09-12T22:15:53Z",
+  "skipped_records": null
+ },
+ "session": {
+  "idp_status": null,
+  "fpl_status": null,
+  "access_token_exp": null,
+  "checked_at": "2026-09-12T22:15:53Z",
+  "note": "CI minted a fresh session 2026-09-12T22:11:39Z",
+  "last_probe": {
+   "timestamp": "2026-09-06T12:26:55Z",
+   "result": "FAIL"
+  },
+  "secret_updated_at": null,
+  "last_reauth_at": null,
+  "last_mint_at": "2026-09-12T22:11:39Z",
+  "last_ci_probe_at": "2026-09-12T22:11:39Z",
+  "last_ci_probe_outcome": "success"
+ },
+ "chronic_flags": [
+  {
+   "id": "shrinkage_inactive",
+   "label": "Players with a usable last-season record",
+   "firing": false,
+   "state": "clear",
+   "value": "307 of 656",
+   "threshold": "307 active (fires at 0)"
+  },
+  {
+   "id": "odds_stretch",
+   "label": "How much the betting-odds scores need stretching to match ours",
+   "firing": false,
+   "state": "clear",
+   "value": 1.9719,
+   "threshold": "1.97x (fires at 2.00x or above)"
+  },
+  {
+   "id": "scale_gate",
+   "label": "Week-over-week movement in blended scores",
+   "firing": false,
+   "state": "clear",
+   "value": "stable",
+   "threshold": "mean -1.1% vs recent weeks (tolerance \u00b15%); sd -0.4% vs recent weeks (tolerance \u00b110%); p90 -0.7% vs recent weeks (tolerance \u00b110%); max +1.2% vs recent weeks (tolerance \u00b115%)"
+  },
+  {
+   "id": "floored_negative",
+   "label": "Players with a negative score, floored to zero",
+   "firing": false,
+   "state": "clear",
+   "value": 0,
+   "threshold": "0 (reported whenever >=1 -- informational only since 2026-09-08, does NOT gate approval or count toward the flag badge; see directives/prereg_targeted_odds_suppression.md)"
+  },
+  {
+   "id": "zero_credited",
+   "label": "Betting-odds points credited to players with no scoring history",
+   "firing": false,
+   "state": "clear",
+   "value": "0 (taper suppressed 53 to zero weight)",
+   "threshold": "0 (fires at 1 or more -- reporting-only, a per-player taper suppresses most of this population already; see directives/prereg_targeted_odds_suppression.md)"
+  },
+  {
+   "id": "estimator_unvalidated",
+   "label": "Time since the scoring model last changed vs the last settled gameweek",
+   "firing": true,
+   "state": "firing",
+   "value": "the estimator changed at 2026-09-07T19:54:58+02:00, which is AFTER GW3 (the last settled gameweek) already finished -- so no gameweek has been scored with the estimator that produced this week's picks",
+   "threshold": "fires if the estimator changed AFTER the last settled gameweek's deadline -- binary, no magnitude"
+  },
+  {
+   "id": "h1_guard_errored",
+   "label": "Per-transfer marginal-hit guard computation error",
+   "firing": false,
+   "state": "clear",
+   "value": null,
+   "threshold": "fires if the guard's own computation raised -- binary, no magnitude"
+  },
+  {
+   "id": "horizon_check_errored",
+   "label": "Horizon-degeneracy check computation error",
+   "firing": false,
+   "state": "clear",
+   "value": null,
+   "threshold": "fires if the check's own computation raised -- binary, no magnitude"
+  },
+  {
+   "id": "scout_health",
+   "label": "Injury/team-news provider corroboration",
+   "firing": false,
+   "state": "clear",
+   "value": "2/2 responded \u2014 corroboration possible (agreement still rules out a single model's own hallucination, but both share one OpenRouter account, so it no longer rules out a shared-account failure)",
+   "threshold": "fires when fewer than 2 provider(s) respond ok/ok-empty this pass"
+  },
+  {
+   "id": "wildcard_rescue_guard",
+   "label": "Wildcard rescue-condition guard status",
+   "firing": false,
+   "state": "clear",
+   "value": "guard ran cleanly \u2014 0 squad player(s) unavailable this pass, rescue condition did not fire",
+   "threshold": null
+  },
+  {
+   "id": "ci_tests_failing",
+   "label": "Automated test results on the latest code",
+   "firing": false,
+   "state": "clear",
+   "value": "suites ran to completion with no reported failure",
+   "threshold": "fires on any status other than a confirmed 'success' -- binary, no magnitude ('unknown' is its own third state, see above)",
+   "link": "https://github.com/reedcolin89-lgtm/fpl-agent/actions/runs/34722017613"
+  }
+ ],
+ "estimator": {
+  "changed_at": "2026-09-07T19:54:58+02:00",
+  "last_settled_gw": 3
+ },
+ "freeze": {
+  "stamped": true,
+  "n_files": 12
+ },
+ "strategy_drift": {
+  "status": "ok",
+  "n_values_compared": 38,
+  "n_differences": 2,
+  "differences": [
+   {
+    "key": "chips.first_half.wildcard.trigger_xp_gain",
+    "gw1": 12.0,
+    "live": 50.0
+   },
+   {
+    "key": "chips.second_half.wildcard.trigger_xp_gain",
+    "gw1": 12.0,
+    "live": 50.0
+   }
+  ],
+  "note": "2 of 38 values have moved since GW1 \u2014 drift is expected under the 2026-09-08 checkpoint governance, this is information, not a fault"
+ },
+ "scheduler": {
+  "note": "not measured"
+ },
+ "ci_tests": {
+  "status": "success",
+  "run_url": "https://github.com/reedcolin89-lgtm/fpl-agent/actions/runs/34722017613",
+  "run_started_at": "2026-09-12T22:10:46Z",
+  "note": "suites ran to completion with no reported failure"
+ }
+}

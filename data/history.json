@@ -1,0 +1,2968 @@
+{
+ "source": {
+  "records_scanned": 72,
+  "built_at": "2026-09-12T22:15:52Z"
+ },
+ "entries": [
+  {
+   "record": "decision_20260818T142342Z.json",
+   "written": "2026-08-18T14:23:42Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 1,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 123.96,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T142344Z.json",
+   "written": "2026-08-18T14:23:44Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 1,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 123.96,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T142347Z.json",
+   "written": "2026-08-18T14:23:47Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 1,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 123.96,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T150524Z.json",
+   "written": "2026-08-18T15:05:24Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 465,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 256.42,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 1,
+     "after": 465
+    },
+    "objective_xp": {
+     "before": 123.96,
+     "after": 256.42
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T150525Z.json",
+   "written": "2026-08-18T15:05:25Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 465,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 256.42,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T163955Z.json",
+   "written": "2026-08-18T16:39:55Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 465,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 256.42,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T163956Z.json",
+   "written": "2026-08-18T16:39:56Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 465,
+   "captain_xp": null,
+   "hits": 0,
+   "objective_xp": 256.42,
+   "objective_mode": null,
+   "top_xp": null,
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T173509Z.json",
+   "written": "2026-08-18T17:35:09Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 465,
+   "captain_xp": 8.94,
+   "hits": 0,
+   "objective_xp": 256.42,
+   "objective_mode": null,
+   "top_xp": {
+    "id": 411,
+    "xp": 9.04
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260818T173510Z.json",
+   "written": "2026-08-18T17:35:10Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 465,
+   "captain_xp": 8.94,
+   "hits": 0,
+   "objective_xp": 256.42,
+   "objective_mode": null,
+   "top_xp": {
+    "id": 411,
+    "xp": 9.04
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260819T074854Z.json",
+   "written": "2026-08-19T07:48:54Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.86,
+   "hits": 0,
+   "objective_xp": 272.82,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.86
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 465,
+     "after": 411
+    },
+    "objective_xp": {
+     "before": 256.42,
+     "after": 272.82
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260819T093448Z.json",
+   "written": "2026-08-19T09:34:48Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.59,
+   "hits": 0,
+   "objective_xp": 271.43,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.59
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 272.82,
+     "after": 271.43
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260819T094923Z.json",
+   "written": "2026-08-19T09:49:23Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.69,
+   "hits": 0,
+   "objective_xp": 271.68,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.69
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 271.43,
+     "after": 271.68
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260819T100921Z.json",
+   "written": "2026-08-19T10:09:21Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.86,
+   "hits": 0,
+   "objective_xp": 272.14,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.86
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 271.68,
+     "after": 272.14
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T092013Z.json",
+   "written": "2026-08-21T09:20:13Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.86,
+   "hits": 0,
+   "objective_xp": 261.65,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.86
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 272.14,
+     "after": 261.65
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T095125Z.json",
+   "written": "2026-08-21T09:51:25Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.86,
+   "hits": 0,
+   "objective_xp": 270.62,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.86
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 261.65,
+     "after": 270.62
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T103836Z.json",
+   "written": "2026-08-21T10:38:36Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.87,
+   "hits": 0,
+   "objective_xp": 258.26,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.87
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 270.62,
+     "after": 258.26
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T113355Z.json",
+   "written": "2026-08-21T11:33:55Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.87,
+   "hits": 0,
+   "objective_xp": 258.26,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.87
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T130226Z.json",
+   "written": "2026-08-21T13:02:26Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.87,
+   "hits": 0,
+   "objective_xp": 265.84,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.87
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 258.26,
+     "after": 265.84
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T145857Z.json",
+   "written": "2026-08-21T14:58:57Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.27,
+   "hits": 0,
+   "objective_xp": 241.78,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.27
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 265.84,
+     "after": 241.78
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T164234Z.json",
+   "written": "2026-08-21T16:42:34Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.27,
+   "hits": 0,
+   "objective_xp": 247.92,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.27
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 241.78,
+     "after": 247.92
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260821T165000Z_corrected.json",
+   "written": "2026-08-21T16:50:00Z",
+   "gw": 1,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.27,
+   "hits": 0,
+   "objective_xp": 247.92,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.27
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260823T201354Z.json",
+   "written": "2026-08-23T20:13:54Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.07,
+   "hits": 0,
+   "objective_xp": 123.75,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.07
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260825T111241Z.json",
+   "written": "2026-08-25T11:12:41Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.63,
+   "hits": 0,
+   "objective_xp": 126.65,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.63
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 123.75,
+     "after": 126.65
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260825T190350Z.json",
+   "written": "2026-08-25T19:03:50Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.63,
+   "hits": 0,
+   "objective_xp": 126.67,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.63
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 126.65,
+     "after": 126.67
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260826T071002Z.json",
+   "written": "2026-08-26T07:10:02Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 4,
+   "captain_xp": 3.67,
+   "hits": 0,
+   "objective_xp": 126.96,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 426,
+    "xp": 3.84
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 411,
+     "after": 4
+    },
+    "objective_xp": {
+     "before": 126.67,
+     "after": 126.96
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260826T073755Z.json",
+   "written": "2026-08-26T07:37:55Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.63,
+   "hits": 0,
+   "objective_xp": 127.93,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.63
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 4,
+     "after": 411
+    },
+    "objective_xp": {
+     "before": 126.96,
+     "after": 127.93
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260826T164714Z.json",
+   "written": "2026-08-26T16:47:14Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.64,
+   "hits": 0,
+   "objective_xp": 128.71,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.64
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.93,
+     "after": 128.71
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260826T173239Z.json",
+   "written": "2026-08-26T17:32:39Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.64,
+   "hits": 0,
+   "objective_xp": 127.45,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.64
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 128.71,
+     "after": 127.45
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T061350Z.json",
+   "written": "2026-08-28T06:13:50Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.65,
+   "hits": 0,
+   "objective_xp": 128.33,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.65
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.45,
+     "after": 128.33
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T070759Z.json",
+   "written": "2026-08-28T07:07:59Z",
+   "gw": 2,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 4,
+   "captain_xp": 3.68,
+   "hits": 0,
+   "objective_xp": 122.01,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 426,
+    "xp": 3.83
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 411,
+     "after": 4
+    },
+    "chip": {
+     "before": null,
+     "after": "wildcard"
+    },
+    "chip_recommended": {
+     "before": null,
+     "after": "wildcard"
+    },
+    "objective_xp": {
+     "before": 128.33,
+     "after": 122.01
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T072711Z.json",
+   "written": "2026-08-28T07:27:11Z",
+   "gw": 2,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 4,
+   "captain_xp": 3.68,
+   "hits": 0,
+   "objective_xp": 125.0,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 426,
+    "xp": 3.83
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 122.01,
+     "after": 125.0
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T075648Z.json",
+   "written": "2026-08-28T07:56:48Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.65,
+   "hits": 0,
+   "objective_xp": 126.97,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.65
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 4,
+     "after": 411
+    },
+    "chip": {
+     "before": "wildcard",
+     "after": null
+    },
+    "chip_recommended": {
+     "before": "wildcard",
+     "after": null
+    },
+    "objective_xp": {
+     "before": 125.0,
+     "after": 126.97
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T082442Z.json",
+   "written": "2026-08-28T08:24:42Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.65,
+   "hits": 0,
+   "objective_xp": 126.97,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.65
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T101212Z.json",
+   "written": "2026-08-28T10:12:12Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 126.98,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 126.97,
+     "after": 126.98
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T113438Z.json",
+   "written": "2026-08-28T11:34:38Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 127.81,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 126.98,
+     "after": 127.81
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T122218Z.json",
+   "written": "2026-08-28T12:22:18Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 127.79,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.81,
+     "after": 127.79
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T124006Z.json",
+   "written": "2026-08-28T12:40:06Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 127.79,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T125307Z.json",
+   "written": "2026-08-28T12:53:07Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 127.68,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.79,
+     "after": 127.68
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T133814Z.json",
+   "written": "2026-08-28T13:38:14Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 129.55,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.68,
+     "after": 129.55
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T140505Z.json",
+   "written": "2026-08-28T14:05:05Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 127.81,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 129.55,
+     "after": 127.81
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T155915Z.json",
+   "written": "2026-08-28T15:59:15Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 126.45,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.81,
+     "after": 126.45
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T162543Z.json",
+   "written": "2026-08-28T16:25:43Z",
+   "gw": 2,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 125.44,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "chip": {
+     "before": null,
+     "after": "wildcard"
+    },
+    "chip_recommended": {
+     "before": null,
+     "after": "wildcard"
+    },
+    "objective_xp": {
+     "before": 126.45,
+     "after": 125.44
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T170602Z.json",
+   "written": "2026-08-28T17:06:02Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.66,
+   "hits": 0,
+   "objective_xp": 127.74,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.66
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "chip": {
+     "before": "wildcard",
+     "after": null
+    },
+    "chip_recommended": {
+     "before": "wildcard",
+     "after": null
+    },
+    "objective_xp": {
+     "before": 125.44,
+     "after": 127.74
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260828T173023Z.json",
+   "written": "2026-08-28T17:30:23Z",
+   "gw": 2,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 4.65,
+   "hits": 0,
+   "objective_xp": 129.38,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 4.65
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 127.74,
+     "after": 129.38
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260831T065152Z.json",
+   "written": "2026-08-31T06:51:52Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.59,
+   "hits": 0,
+   "objective_xp": 111.6,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.59
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260831T102036Z.json",
+   "written": "2026-08-31T10:20:36Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.56,
+   "hits": 0,
+   "objective_xp": 108.61,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.56
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 111.6,
+     "after": 108.61
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T113612Z.json",
+   "written": "2026-09-02T11:36:12Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.45,
+   "hits": 0,
+   "objective_xp": 113.34,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.45
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 108.61,
+     "after": 113.34
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T125838Z.json",
+   "written": "2026-09-02T12:58:38Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.4,
+   "hits": 0,
+   "objective_xp": 115.38,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.4
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 113.34,
+     "after": 115.38
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T130713Z.json",
+   "written": "2026-09-02T13:07:13Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.4,
+   "hits": 0,
+   "objective_xp": 112.77,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.4
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 115.38,
+     "after": 112.77
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T131830Z.json",
+   "written": "2026-09-02T13:18:30Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 237,
+   "captain_xp": 11.34,
+   "hits": 0,
+   "objective_xp": 111.69,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 237,
+    "xp": 11.34
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 399,
+     "after": 237
+    },
+    "objective_xp": {
+     "before": 112.77,
+     "after": 111.69
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T192101Z.json",
+   "written": "2026-09-02T19:21:01Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.46,
+   "hits": 0,
+   "objective_xp": 113.58,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.46
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 237,
+     "after": 399
+    },
+    "objective_xp": {
+     "before": 111.69,
+     "after": 113.58
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T195617Z.json",
+   "written": "2026-09-02T19:56:17Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.46,
+   "hits": 0,
+   "objective_xp": 115.04,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.46
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 113.58,
+     "after": 115.04
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260902T200724Z.json",
+   "written": "2026-09-02T20:07:24Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 237,
+   "captain_xp": 11.26,
+   "hits": 0,
+   "objective_xp": 114.22,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 237,
+    "xp": 11.26
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 399,
+     "after": 237
+    },
+    "objective_xp": {
+     "before": 115.04,
+     "after": 114.22
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260903T094908Z.json",
+   "written": "2026-09-03T09:49:08Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 10.35,
+   "hits": 0,
+   "objective_xp": 110.19,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 411,
+    "xp": 10.35
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 237,
+     "after": 411
+    },
+    "objective_xp": {
+     "before": 114.22,
+     "after": 110.19
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260903T103936Z.json",
+   "written": "2026-09-03T10:39:36Z",
+   "gw": 3,
+   "chip": "freehit",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 399,
+   "captain_xp": 11.5,
+   "hits": 0,
+   "objective_xp": 114.81,
+   "objective_mode": "membership_h1",
+   "top_xp": {
+    "id": 399,
+    "xp": 11.5
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 411,
+     "after": 399
+    },
+    "objective_xp": {
+     "before": 110.19,
+     "after": 114.81
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260904T103711Z.json",
+   "written": "2026-09-04T10:37:11Z",
+   "gw": 3,
+   "chip": "3xc",
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 12.74,
+   "hits": 1,
+   "objective_xp": 337.12,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 12.74
+   },
+   "provenance": {
+    "shrinkage_active_n": null,
+    "shrinkage_total_n": null,
+    "odds_normalisation_a": null,
+    "odds_floored_negative": null,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": null,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "captain": {
+     "before": 399,
+     "after": 411
+    },
+    "chip": {
+     "before": "freehit",
+     "after": "3xc"
+    },
+    "objective_xp": {
+     "before": 114.81,
+     "after": 337.12
+    },
+    "hits": {
+     "before": 0,
+     "after": 1
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260904T120428Z.json",
+   "written": "2026-09-04T12:04:28Z",
+   "gw": 3,
+   "chip": "3xc",
+   "chip_recommended": "3xc",
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 12.76,
+   "hits": 1,
+   "objective_xp": 336.86,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 12.76
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 652,
+    "odds_normalisation_a": 2.6142,
+    "odds_floored_negative": 13,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "chip_recommended": {
+     "before": null,
+     "after": "3xc"
+    },
+    "objective_xp": {
+     "before": 337.12,
+     "after": 336.86
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260904T151450Z.json",
+   "written": "2026-09-04T15:14:50Z",
+   "gw": 3,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 11.71,
+   "hits": 0,
+   "objective_xp": 340.72,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 11.71
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 652,
+    "odds_normalisation_a": 2.4977,
+    "odds_floored_negative": 9,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "chip": {
+     "before": "3xc",
+     "after": "wildcard"
+    },
+    "chip_recommended": {
+     "before": "3xc",
+     "after": "wildcard"
+    },
+    "objective_xp": {
+     "before": 336.86,
+     "after": 340.72
+    },
+    "hits": {
+     "before": 1,
+     "after": 0
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260904T155817Z.json",
+   "written": "2026-09-04T15:58:17Z",
+   "gw": 3,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 11.69,
+   "hits": 0,
+   "objective_xp": 344.57,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 11.69
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 652,
+    "odds_normalisation_a": 2.5459,
+    "odds_floored_negative": 14,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": null,
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 340.72,
+     "after": 344.57
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260904T165413Z.json",
+   "written": "2026-09-04T16:54:13Z",
+   "gw": 3,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 11.71,
+   "hits": 1,
+   "objective_xp": 307.52,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 11.71
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 652,
+    "odds_normalisation_a": 2.5553,
+    "odds_floored_negative": 14,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "api_observed",
+   "owner": {
+    "chip_played_api_observed": {
+     "value": "3xc",
+     "timestamp": "2026-09-04T17:17:00Z"
+    },
+    "transfers_taken_api_observed": {
+     "value": {
+      "made": 2,
+      "cost": 4
+     },
+     "timestamp": "2026-09-04T17:17:00Z"
+    },
+    "source": "api_observed"
+   },
+   "diff_from_previous": {
+    "chip": {
+     "before": "wildcard",
+     "after": null
+    },
+    "chip_recommended": {
+     "before": "wildcard",
+     "after": null
+    },
+    "objective_xp": {
+     "before": 344.57,
+     "after": 307.52
+    },
+    "hits": {
+     "before": 0,
+     "after": 1
+    }
+   },
+   "is_owner_decision": true
+  },
+  {
+   "record": "decision_20260906T103007Z.json",
+   "written": "2026-09-06T10:30:07Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 411,
+   "captain_xp": 8.12,
+   "hits": 0,
+   "objective_xp": 263.23,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.12
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 653,
+    "odds_normalisation_a": 1.7738,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260906T103459Z.json",
+   "written": "2026-09-06T10:34:59Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 379,
+   "captain_xp": 8.55,
+   "hits": 0,
+   "objective_xp": 294.49,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 379,
+    "xp": 8.55
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 653,
+    "odds_normalisation_a": 1.8433,
+    "odds_floored_negative": 2,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "captain": {
+     "before": 411,
+     "after": 379
+    },
+    "objective_xp": {
+     "before": 263.23,
+     "after": 294.49
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260906T105456Z.json",
+   "written": "2026-09-06T10:54:56Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 379,
+   "captain_xp": 8.55,
+   "hits": 0,
+   "objective_xp": 292.72,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 379,
+    "xp": 8.55
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 653,
+    "odds_normalisation_a": 1.8435,
+    "odds_floored_negative": 2,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 294.49,
+     "after": 292.72
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260906T172609Z.json",
+   "written": "2026-09-06T17:26:09Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 154,
+   "captain_xp": 8.75,
+   "hits": 0,
+   "objective_xp": 301.82,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 154,
+    "xp": 8.75
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 653,
+    "odds_normalisation_a": 1.8375,
+    "odds_floored_negative": 2,
+    "odds_zero_credited": null,
+    "odds_tapered_to_zero": null,
+    "odds_scale_gate_ok": false,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "captain": {
+     "before": 379,
+     "after": 154
+    },
+    "objective_xp": {
+     "before": 292.72,
+     "after": 301.82
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260908T074146Z.json",
+   "written": "2026-09-08T07:41:46Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 379,
+   "captain_xp": 8.55,
+   "hits": 0,
+   "objective_xp": 299.65,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.66
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 654,
+    "odds_normalisation_a": 1.9096,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 56,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "captain": {
+     "before": 154,
+     "after": 379
+    },
+    "objective_xp": {
+     "before": 301.82,
+     "after": 299.65
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260908T075943Z.json",
+   "written": "2026-09-08T07:59:43Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 379,
+   "captain_xp": 8.63,
+   "hits": 0,
+   "objective_xp": 300.68,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 411,
+    "xp": 8.67
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 654,
+    "odds_normalisation_a": 1.9112,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 56,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 299.65,
+     "after": 300.68
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260908T080911Z.json",
+   "written": "2026-09-08T08:09:11Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 154,
+   "captain_xp": 8.83,
+   "hits": 0,
+   "objective_xp": 303.59,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 154,
+    "xp": 8.83
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 654,
+    "odds_normalisation_a": 1.9112,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 56,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "captain": {
+     "before": 379,
+     "after": 154
+    },
+    "objective_xp": {
+     "before": 300.68,
+     "after": 303.59
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260908T094642Z.json",
+   "written": "2026-09-08T09:46:42Z",
+   "gw": 4,
+   "chip": "wildcard",
+   "chip_recommended": "wildcard",
+   "chip_played": null,
+   "captain": 154,
+   "captain_xp": 8.83,
+   "hits": 0,
+   "objective_xp": 303.59,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 154,
+    "xp": 8.83
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 654,
+    "odds_normalisation_a": 1.9112,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 56,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": null,
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260910T074812Z.json",
+   "written": "2026-09-10T07:48:12Z",
+   "gw": 4,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 165,
+   "captain_xp": 8.32,
+   "hits": 0,
+   "objective_xp": 265.32,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 154,
+    "xp": 8.89
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 654,
+    "odds_normalisation_a": 1.9312,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 54,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "captain": {
+     "before": 154,
+     "after": 165
+    },
+    "chip": {
+     "before": "wildcard",
+     "after": null
+    },
+    "chip_recommended": {
+     "before": "wildcard",
+     "after": null
+    },
+    "objective_xp": {
+     "before": 303.59,
+     "after": 265.32
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260912T054154Z.json",
+   "written": "2026-09-12T05:41:54Z",
+   "gw": 4,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 165,
+   "captain_xp": 8.45,
+   "hits": 0,
+   "objective_xp": 266.1,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 379,
+    "xp": 8.53
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 656,
+    "odds_normalisation_a": 1.9461,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 53,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 265.32,
+     "after": 266.1
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260912T103950Z.json",
+   "written": "2026-09-12T10:39:50Z",
+   "gw": 4,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 165,
+   "captain_xp": 8.47,
+   "hits": 0,
+   "objective_xp": 263.77,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 154,
+    "xp": 8.92
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 656,
+    "odds_normalisation_a": 1.9758,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 53,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "proposed",
+   "owner": {
+    "intent": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "none"
+   },
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 266.1,
+     "after": 263.77
+    }
+   },
+   "is_owner_decision": false
+  },
+  {
+   "record": "decision_20260912T111900Z.json",
+   "written": "2026-09-12T11:19:00Z",
+   "gw": 4,
+   "chip": null,
+   "chip_recommended": null,
+   "chip_played": null,
+   "captain": 165,
+   "captain_xp": 8.51,
+   "hits": 0,
+   "objective_xp": 266.29,
+   "objective_mode": "membership_h5",
+   "top_xp": {
+    "id": 154,
+    "xp": 8.96
+   },
+   "provenance": {
+    "shrinkage_active_n": 307,
+    "shrinkage_total_n": 656,
+    "odds_normalisation_a": 1.9719,
+    "odds_floored_negative": 0,
+    "odds_zero_credited": 0,
+    "odds_tapered_to_zero": 53,
+    "odds_scale_gate_ok": true,
+    "estimator_unvalidated": null
+   },
+   "decision_status": "owner_reported",
+   "owner": {
+    "intent": {
+     "value": "Saka in XI for Barkley, 4-3-3, Barkley first outfield sub",
+     "timestamp": "2026-09-12T11:18:59Z"
+    },
+    "chip_played_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_excluded_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_owner_reported": {
+     "value": null,
+     "timestamp": null
+    },
+    "chip_played_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "transfers_taken_api_observed": {
+     "value": null,
+     "timestamp": null
+    },
+    "source": "owner_reported"
+   },
+   "diff_from_previous": {
+    "objective_xp": {
+     "before": 263.77,
+     "after": 266.29
+    }
+   },
+   "is_owner_decision": true
+  }
+ ]
+}

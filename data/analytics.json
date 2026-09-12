@@ -1,0 +1,888 @@
+{
+ "source": {
+  "built_at": "2026-09-12T22:15:53Z",
+  "commit": "83fb852"
+ },
+ "estimator_versions": {
+  "source": {
+   "built_at": "2026-09-12T22:15:53Z",
+   "files_tracked": [
+    "src/xp_model.py",
+    "src/odds_model.py"
+   ]
+  },
+  "versions": {
+   "1": {
+    "deadline": "2026-08-21T17:30:00Z",
+    "settled": true,
+    "estimator": {
+     "commit": "a9428338b76a",
+     "committed_at": "2026-08-21T16:55:21+02:00",
+     "subject": "xp_model: raise RATE_PRIOR_MINUTES 900 -> 3000 to match its own comment"
+    }
+   },
+   "2": {
+    "deadline": "2026-08-28T17:30:00Z",
+    "settled": true,
+    "estimator": {
+     "commit": "fa234a8176ab",
+     "committed_at": "2026-08-26T09:02:04+02:00",
+     "subject": "wire up scout_calibration; fix review_gate's twin bug; add fixture-strength dormancy alert"
+    }
+   },
+   "3": {
+    "deadline": "2026-09-04T17:30:00Z",
+    "settled": true,
+    "estimator": {
+     "commit": "3e8538b8e36b",
+     "committed_at": "2026-09-04T18:08:20+02:00",
+     "subject": "narrate: true captain BASIS under shrinkage; wildcard worth-the-token block"
+    }
+   },
+   "4": {
+    "deadline": "2026-09-12T12:30:00Z",
+    "settled": false,
+    "estimator": {
+     "commit": "e62afa2e7e8c",
+     "committed_at": "2026-09-07T19:54:58+02:00",
+     "subject": "Ship the targeted odds-suppression taper; retire floored_negative as a monitor"
+    }
+   }
+  }
+ },
+ "calibration": {
+  "source": {
+   "built_at": "2026-09-12T22:15:54Z",
+   "settled_gws": [
+    1,
+    2,
+    3
+   ]
+  },
+  "gameweeks": {
+   "1": {
+    "record": "decision_20260821T165000Z_corrected.json",
+    "field_wide": {
+     "n": 502,
+     "mean_projected": 3.181,
+     "mean_actual": 1.888,
+     "residual_spread": 2.885,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 50,
+       "mean_projected": 0.913,
+       "mean_actual": 1.22
+      },
+      {
+       "decile": 2,
+       "n": 50,
+       "mean_projected": 1.603,
+       "mean_actual": 0.68
+      },
+      {
+       "decile": 3,
+       "n": 50,
+       "mean_projected": 1.971,
+       "mean_actual": 0.62
+      },
+      {
+       "decile": 4,
+       "n": 50,
+       "mean_projected": 2.397,
+       "mean_actual": 1.42
+      },
+      {
+       "decile": 5,
+       "n": 50,
+       "mean_projected": 2.981,
+       "mean_actual": 1.28
+      },
+      {
+       "decile": 6,
+       "n": 50,
+       "mean_projected": 3.412,
+       "mean_actual": 1.78
+      },
+      {
+       "decile": 7,
+       "n": 50,
+       "mean_projected": 3.772,
+       "mean_actual": 2.7
+      },
+      {
+       "decile": 8,
+       "n": 50,
+       "mean_projected": 4.221,
+       "mean_actual": 2.76
+      },
+      {
+       "decile": 9,
+       "n": 50,
+       "mean_projected": 4.663,
+       "mean_actual": 2.84
+      },
+      {
+       "decile": 10,
+       "n": 52,
+       "mean_projected": 5.773,
+       "mean_actual": 3.519
+      }
+     ]
+    },
+    "xi_level": {
+     "n": 11,
+     "mean_projected": 5.736,
+     "mean_actual": 6.636,
+     "residual_spread": 5.096,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 1,
+       "mean_projected": 3.64,
+       "mean_actual": 7
+      },
+      {
+       "decile": 2,
+       "n": 1,
+       "mean_projected": 4.78,
+       "mean_actual": 17
+      },
+      {
+       "decile": 3,
+       "n": 1,
+       "mean_projected": 4.84,
+       "mean_actual": 0
+      },
+      {
+       "decile": 4,
+       "n": 1,
+       "mean_projected": 5.18,
+       "mean_actual": 3
+      },
+      {
+       "decile": 5,
+       "n": 1,
+       "mean_projected": 5.52,
+       "mean_actual": 9
+      },
+      {
+       "decile": 6,
+       "n": 1,
+       "mean_projected": 5.72,
+       "mean_actual": 8
+      },
+      {
+       "decile": 7,
+       "n": 1,
+       "mean_projected": 5.86,
+       "mean_actual": 11
+      },
+      {
+       "decile": 8,
+       "n": 1,
+       "mean_projected": 6.15,
+       "mean_actual": 2
+      },
+      {
+       "decile": 9,
+       "n": 1,
+       "mean_projected": 6.17,
+       "mean_actual": 5
+      },
+      {
+       "decile": 10,
+       "n": 2,
+       "mean_projected": 7.62,
+       "mean_actual": 5.5
+      }
+     ],
+     "gated": {
+      "n": 11,
+      "value": null,
+      "meaningful": false,
+      "note": "not yet meaningful (n=11, needs >= 30)"
+     }
+    }
+   },
+   "2": {
+    "record": "decision_20260828T173023Z.json",
+    "field_wide": {
+     "n": 513,
+     "mean_projected": 1.914,
+     "mean_actual": 1.731,
+     "residual_spread": 2.585,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 51,
+       "mean_projected": 0.984,
+       "mean_actual": 0.608
+      },
+      {
+       "decile": 2,
+       "n": 51,
+       "mean_projected": 1.313,
+       "mean_actual": 0.745
+      },
+      {
+       "decile": 3,
+       "n": 51,
+       "mean_projected": 1.57,
+       "mean_actual": 0.922
+      },
+      {
+       "decile": 4,
+       "n": 51,
+       "mean_projected": 1.696,
+       "mean_actual": 1.118
+      },
+      {
+       "decile": 5,
+       "n": 51,
+       "mean_projected": 1.814,
+       "mean_actual": 1.235
+      },
+      {
+       "decile": 6,
+       "n": 51,
+       "mean_projected": 1.978,
+       "mean_actual": 1.431
+      },
+      {
+       "decile": 7,
+       "n": 51,
+       "mean_projected": 2.134,
+       "mean_actual": 2.392
+      },
+      {
+       "decile": 8,
+       "n": 51,
+       "mean_projected": 2.277,
+       "mean_actual": 2.157
+      },
+      {
+       "decile": 9,
+       "n": 51,
+       "mean_projected": 2.433,
+       "mean_actual": 2.333
+      },
+      {
+       "decile": 10,
+       "n": 54,
+       "mean_projected": 2.884,
+       "mean_actual": 4.222
+      }
+     ]
+    },
+    "xi_level": {
+     "n": 11,
+     "mean_projected": 2.965,
+     "mean_actual": 5.545,
+     "residual_spread": 4.264,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 1,
+       "mean_projected": 1.94,
+       "mean_actual": 0
+      },
+      {
+       "decile": 2,
+       "n": 1,
+       "mean_projected": 2.17,
+       "mean_actual": 2
+      },
+      {
+       "decile": 3,
+       "n": 1,
+       "mean_projected": 2.42,
+       "mean_actual": 1
+      },
+      {
+       "decile": 4,
+       "n": 1,
+       "mean_projected": 2.64,
+       "mean_actual": 11
+      },
+      {
+       "decile": 5,
+       "n": 1,
+       "mean_projected": 2.66,
+       "mean_actual": 1
+      },
+      {
+       "decile": 6,
+       "n": 1,
+       "mean_projected": 2.84,
+       "mean_actual": 9
+      },
+      {
+       "decile": 7,
+       "n": 1,
+       "mean_projected": 2.96,
+       "mean_actual": 0
+      },
+      {
+       "decile": 8,
+       "n": 1,
+       "mean_projected": 3.16,
+       "mean_actual": 5
+      },
+      {
+       "decile": 9,
+       "n": 1,
+       "mean_projected": 3.5,
+       "mean_actual": 11
+      },
+      {
+       "decile": 10,
+       "n": 2,
+       "mean_projected": 4.165,
+       "mean_actual": 10.5
+      }
+     ],
+     "gated": {
+      "n": 11,
+      "value": null,
+      "meaningful": false,
+      "note": "not yet meaningful (n=11, needs >= 30)"
+     }
+    }
+   },
+   "3": {
+    "record": "decision_20260904T165413Z.json",
+    "field_wide": {
+     "n": 448,
+     "mean_projected": 2.756,
+     "mean_actual": 2.007,
+     "residual_spread": 2.667,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 44,
+       "mean_projected": 0.333,
+       "mean_actual": 0.682
+      },
+      {
+       "decile": 2,
+       "n": 44,
+       "mean_projected": 0.759,
+       "mean_actual": 0.659
+      },
+      {
+       "decile": 3,
+       "n": 44,
+       "mean_projected": 1.138,
+       "mean_actual": 0.705
+      },
+      {
+       "decile": 4,
+       "n": 44,
+       "mean_projected": 1.645,
+       "mean_actual": 1.023
+      },
+      {
+       "decile": 5,
+       "n": 44,
+       "mean_projected": 2.272,
+       "mean_actual": 2.523
+      },
+      {
+       "decile": 6,
+       "n": 44,
+       "mean_projected": 2.778,
+       "mean_actual": 2.886
+      },
+      {
+       "decile": 7,
+       "n": 44,
+       "mean_projected": 3.38,
+       "mean_actual": 2.886
+      },
+      {
+       "decile": 8,
+       "n": 44,
+       "mean_projected": 3.874,
+       "mean_actual": 2.545
+      },
+      {
+       "decile": 9,
+       "n": 44,
+       "mean_projected": 4.533,
+       "mean_actual": 2.25
+      },
+      {
+       "decile": 10,
+       "n": 52,
+       "mean_projected": 6.217,
+       "mean_actual": 3.615
+      }
+     ]
+    },
+    "xi_level": {
+     "n": 11,
+     "mean_projected": 7.121,
+     "mean_actual": 3.364,
+     "residual_spread": 2.228,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 1,
+       "mean_projected": 4.33,
+       "mean_actual": 3
+      },
+      {
+       "decile": 2,
+       "n": 1,
+       "mean_projected": 4.98,
+       "mean_actual": 2
+      },
+      {
+       "decile": 3,
+       "n": 1,
+       "mean_projected": 6.22,
+       "mean_actual": 1
+      },
+      {
+       "decile": 4,
+       "n": 1,
+       "mean_projected": 6.24,
+       "mean_actual": 2
+      },
+      {
+       "decile": 5,
+       "n": 1,
+       "mean_projected": 6.38,
+       "mean_actual": 2
+      },
+      {
+       "decile": 6,
+       "n": 1,
+       "mean_projected": 6.74,
+       "mean_actual": 4
+      },
+      {
+       "decile": 7,
+       "n": 1,
+       "mean_projected": 6.77,
+       "mean_actual": 6
+      },
+      {
+       "decile": 8,
+       "n": 1,
+       "mean_projected": 8.03,
+       "mean_actual": 6
+      },
+      {
+       "decile": 9,
+       "n": 1,
+       "mean_projected": 8.08,
+       "mean_actual": 2
+      },
+      {
+       "decile": 10,
+       "n": 2,
+       "mean_projected": 10.28,
+       "mean_actual": 4.5
+      }
+     ],
+     "gated": {
+      "n": 11,
+      "value": null,
+      "meaningful": false,
+      "note": "not yet meaningful (n=11, needs >= 30)"
+     }
+    }
+   }
+  },
+  "pooled_xi_level": {
+   "n": 33,
+   "mean_projected": 5.274,
+   "mean_actual": 5.182,
+   "residual_spread": 4.854,
+   "deciles": [
+    {
+     "decile": 1,
+     "n": 3,
+     "mean_projected": 2.177,
+     "mean_actual": 1
+    },
+    {
+     "decile": 2,
+     "n": 3,
+     "mean_projected": 2.713,
+     "mean_actual": 7
+    },
+    {
+     "decile": 3,
+     "n": 3,
+     "mean_projected": 3.207,
+     "mean_actual": 5.333
+    },
+    {
+     "decile": 4,
+     "n": 3,
+     "mean_projected": 3.883,
+     "mean_actual": 6
+    },
+    {
+     "decile": 5,
+     "n": 3,
+     "mean_projected": 4.757,
+     "mean_actual": 10
+    },
+    {
+     "decile": 6,
+     "n": 3,
+     "mean_projected": 5.227,
+     "mean_actual": 4.667
+    },
+    {
+     "decile": 7,
+     "n": 3,
+     "mean_projected": 5.91,
+     "mean_actual": 7
+    },
+    {
+     "decile": 8,
+     "n": 3,
+     "mean_projected": 6.21,
+     "mean_actual": 2.667
+    },
+    {
+     "decile": 9,
+     "n": 3,
+     "mean_projected": 6.63,
+     "mean_actual": 4
+    },
+    {
+     "decile": 10,
+     "n": 6,
+     "mean_projected": 8.652,
+     "mean_actual": 4.667
+    }
+   ],
+   "gated": {
+    "n": 33,
+    "value": {
+     "n": 33,
+     "mean_projected": 5.274,
+     "mean_actual": 5.182,
+     "residual_spread": 4.854,
+     "deciles": [
+      {
+       "decile": 1,
+       "n": 3,
+       "mean_projected": 2.177,
+       "mean_actual": 1
+      },
+      {
+       "decile": 2,
+       "n": 3,
+       "mean_projected": 2.713,
+       "mean_actual": 7
+      },
+      {
+       "decile": 3,
+       "n": 3,
+       "mean_projected": 3.207,
+       "mean_actual": 5.333
+      },
+      {
+       "decile": 4,
+       "n": 3,
+       "mean_projected": 3.883,
+       "mean_actual": 6
+      },
+      {
+       "decile": 5,
+       "n": 3,
+       "mean_projected": 4.757,
+       "mean_actual": 10
+      },
+      {
+       "decile": 6,
+       "n": 3,
+       "mean_projected": 5.227,
+       "mean_actual": 4.667
+      },
+      {
+       "decile": 7,
+       "n": 3,
+       "mean_projected": 5.91,
+       "mean_actual": 7
+      },
+      {
+       "decile": 8,
+       "n": 3,
+       "mean_projected": 6.21,
+       "mean_actual": 2.667
+      },
+      {
+       "decile": 9,
+       "n": 3,
+       "mean_projected": 6.63,
+       "mean_actual": 4
+      },
+      {
+       "decile": 10,
+       "n": 6,
+       "mean_projected": 8.652,
+       "mean_actual": 4.667
+      }
+     ]
+    },
+    "meaningful": true,
+    "note": null
+   }
+  }
+ },
+ "no_prior_arms": {
+  "source": {
+   "built_at": "2026-09-12T22:15:54Z",
+   "settled_gws": [
+    1,
+    2,
+    3
+   ],
+   "cohort_definition": "no last-season prior AND >= 60 minutes played (directives/prereg_no_prior_shrinkage_target.md)",
+   "cluster_unit": "gameweek -- see _gated_clustered()'s docstring for why a gameweek, not a player, is the independent unit for this section"
+  },
+  "gameweeks": {
+   "1": {
+    "cohort_n": 65,
+    "arms": {
+     "A": {
+      "raw_n": 51,
+      "effective_n": 1,
+      "mae": 1.607,
+      "spearman": -0.1167
+     },
+     "B": {
+      "raw_n": 51,
+      "effective_n": 1,
+      "mae": 1.568,
+      "spearman": -0.1072
+     },
+     "C": {
+      "raw_n": 51,
+      "effective_n": 1,
+      "mae": 1.675,
+      "spearman": 0.2001
+     },
+     "D": {
+      "raw_n": 51,
+      "effective_n": 1,
+      "mae": 1.56,
+      "spearman": -0.1115
+     }
+    }
+   },
+   "2": {
+    "cohort_n": 50,
+    "arms": {
+     "A": {
+      "raw_n": 50,
+      "effective_n": 1,
+      "mae": 2.683,
+      "spearman": -0.2376
+     },
+     "B": {
+      "raw_n": 50,
+      "effective_n": 1,
+      "mae": 2.644,
+      "spearman": -0.2588
+     },
+     "C": {
+      "raw_n": 50,
+      "effective_n": 1,
+      "mae": 2.162,
+      "spearman": 0.0588
+     },
+     "D": {
+      "raw_n": 50,
+      "effective_n": 1,
+      "mae": 2.634,
+      "spearman": -0.2681
+     }
+    }
+   },
+   "3": {
+    "cohort_n": 67,
+    "arms": {
+     "A": {
+      "raw_n": 65,
+      "effective_n": 1,
+      "mae": 2.091,
+      "spearman": 0.1296
+     },
+     "B": {
+      "raw_n": 65,
+      "effective_n": 1,
+      "mae": 2.045,
+      "spearman": 0.1438
+     },
+     "C": {
+      "raw_n": 65,
+      "effective_n": 1,
+      "mae": 2.065,
+      "spearman": 0.2763
+     },
+     "D": {
+      "raw_n": 65,
+      "effective_n": 1,
+      "mae": 2.04,
+      "spearman": 0.1358
+     }
+    }
+   }
+  },
+  "pooled": {
+   "A": {
+    "mae": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": 2.127,
+     "meaningful": true,
+     "note": null
+    },
+    "spearman": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": -0.0749,
+     "meaningful": true,
+     "note": null
+    },
+    "per_gameweek": [
+     {
+      "gw": 1,
+      "raw_n": 51,
+      "mae": 1.607,
+      "spearman": -0.1167
+     },
+     {
+      "gw": 2,
+      "raw_n": 50,
+      "mae": 2.683,
+      "spearman": -0.2376
+     },
+     {
+      "gw": 3,
+      "raw_n": 65,
+      "mae": 2.091,
+      "spearman": 0.1296
+     }
+    ]
+   },
+   "B": {
+    "mae": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": 2.086,
+     "meaningful": true,
+     "note": null
+    },
+    "spearman": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": -0.0741,
+     "meaningful": true,
+     "note": null
+    },
+    "per_gameweek": [
+     {
+      "gw": 1,
+      "raw_n": 51,
+      "mae": 1.568,
+      "spearman": -0.1072
+     },
+     {
+      "gw": 2,
+      "raw_n": 50,
+      "mae": 2.644,
+      "spearman": -0.2588
+     },
+     {
+      "gw": 3,
+      "raw_n": 65,
+      "mae": 2.045,
+      "spearman": 0.1438
+     }
+    ]
+   },
+   "C": {
+    "mae": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": 1.967,
+     "meaningful": true,
+     "note": null
+    },
+    "spearman": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": 0.1784,
+     "meaningful": true,
+     "note": null
+    },
+    "per_gameweek": [
+     {
+      "gw": 1,
+      "raw_n": 51,
+      "mae": 1.675,
+      "spearman": 0.2001
+     },
+     {
+      "gw": 2,
+      "raw_n": 50,
+      "mae": 2.162,
+      "spearman": 0.0588
+     },
+     {
+      "gw": 3,
+      "raw_n": 65,
+      "mae": 2.065,
+      "spearman": 0.2763
+     }
+    ]
+   },
+   "D": {
+    "mae": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": 2.078,
+     "meaningful": true,
+     "note": null
+    },
+    "spearman": {
+     "raw_n": 166,
+     "effective_n": 3,
+     "value": -0.0813,
+     "meaningful": true,
+     "note": null
+    },
+    "per_gameweek": [
+     {
+      "gw": 1,
+      "raw_n": 51,
+      "mae": 1.56,
+      "spearman": -0.1115
+     },
+     {
+      "gw": 2,
+      "raw_n": 50,
+      "mae": 2.634,
+      "spearman": -0.2681
+     },
+     {
+      "gw": 3,
+      "raw_n": 65,
+      "mae": 2.04,
+      "spearman": 0.1358
+     }
+    ]
+   }
+  }
+ }
+}

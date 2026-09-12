@@ -1,0 +1,518 @@
+<meta charset="utf-8">
+<title>fpl-agent Console</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F4F5F2; --panel:#FFFFFF; --panel-2:#EDEFEA; --line:#D6DAD2; --line-2:#C4C9BE;
+  --ink:#1B1F24; --ink-2:#4A5158; --ink-3:#7A828A;
+  --accent:#2F5D8A; --accent-ink:#FFFFFF; --accent-soft:#DCE6F1;
+  --good:#2E8B57; --good-soft:#DFF0E5; --warn:#B8811A; --warn-soft:#F6EBD2; --crit:#B3432B; --crit-soft:#F4DDD7;
+  --pitch:#3E7C4A; --pitch-2:#458A53; --pitch-line:rgba(255,255,255,.55);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --disp:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15181C; --panel:#1D2126; --panel-2:#252A30; --line:#333A42; --line-2:#414953;
+    --ink:#E8EAE6; --ink-2:#B4BAC0; --ink-3:#7F878F;
+    --accent:#7FA8D3; --accent-ink:#0F1A26; --accent-soft:#233549;
+    --good:#5DBB84; --good-soft:#1F3A2B; --warn:#D9A648; --warn-soft:#3D3118; --crit:#E07A63; --crit-soft:#432420;
+    --pitch:#2F5F3A; --pitch-2:#376B42; --pitch-line:rgba(255,255,255,.45);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15181C; --panel:#1D2126; --panel-2:#252A30; --line:#333A42; --line-2:#414953;
+  --ink:#E8EAE6; --ink-2:#B4BAC0; --ink-3:#7F878F;
+  --accent:#7FA8D3; --accent-ink:#0F1A26; --accent-soft:#233549;
+  --good:#5DBB84; --good-soft:#1F3A2B; --warn:#D9A648; --warn-soft:#3D3118; --crit:#E07A63; --crit-soft:#432420;
+  --pitch:#2F5F3A; --pitch-2:#376B42; --pitch-line:rgba(255,255,255,.45);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.app{display:grid;grid-template-columns:200px 1fr;min-height:100vh}
+.nav{background:var(--panel);border-right:1px solid var(--line);padding:16px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:2px}
+.brand{font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:.02em;text-transform:uppercase;padding:4px 10px 14px;color:var(--ink)}
+.brand small{display:block;font:500 11px/1.2 var(--mono);letter-spacing:.06em;color:var(--ink-3);text-transform:none;margin-top:3px}
+.nav button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;color:var(--ink-2);font:500 14px/1.2 var(--sans)}
+.nav button:hover{background:var(--panel-2);color:var(--ink)}
+.nav button[aria-selected="true"]{background:var(--accent-soft);color:var(--ink);font-weight:600}
+.nav button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.nav .count{font:500 11px/1 var(--mono);background:var(--panel-2);color:var(--ink-2);padding:3px 6px;border-radius:10px}
+.nav .count.warn{background:var(--warn-soft);color:var(--warn)}
+.nav .spacer{flex:1}
+.nav .foot{font:400 11px/1.5 var(--mono);color:var(--ink-3);padding:10px}
+main{padding:0 28px 48px;min-width:0}
+#render-errors{background:var(--crit-soft);color:var(--crit);border:1px solid var(--crit);border-radius:6px;padding:10px 14px;margin:0 0 16px;font-size:13px}
+#render-errors p{margin:2px 0}
+.strip{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line);margin:0 -28px 24px;padding:0 28px;background:var(--panel)}
+.strip .cell{padding:12px 18px 12px 0;margin-right:18px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-width:120px}
+.strip .cell:last-child{border-right:0}
+@media (max-width:1000px){.app{grid-template-columns:1fr}.nav{position:sticky;top:0;z-index:5;height:auto;display:flex;flex-direction:row;overflow-x:auto;padding:8px 12px;border-right:0;border-bottom:1px solid var(--line)}.nav .brand,.nav .foot,.nav .spacer{display:none}.nav button{white-space:nowrap;flex:0 0 auto}main{padding:0 16px 40px}.strip{margin:0 -16px 20px;padding:0 16px}}
+.k{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.v{font:600 15px/1.2 var(--sans);color:var(--ink);font-variant-numeric:tabular-nums}
+.v.mono{font-family:var(--mono);font-weight:500}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.dot.good{background:var(--good)}.dot.warn{background:var(--warn)}.dot.crit{background:var(--crit)}
+h1{font:600 30px/1.05 var(--disp);letter-spacing:.01em;margin:0 0 4px;text-transform:uppercase;text-wrap:balance}
+.sub{color:var(--ink-2);margin:0 0 20px;max-width:70ch}
+h2{font:600 12px/1 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+section[hidden]{display:none}
+/* min-width:0 on every direct grid child -- a CSS Grid `1fr` track is
+   implicitly minmax(auto,1fr), so a child whose CONTENT cannot shrink
+   below some width (e.g. a pitch row with no wrap, before the .row fix
+   above) forces its OWN track wider than the viewport, which can push
+   the whole grid past the viewport edge -- the mechanism behind
+   "clipped at the right edge" for panels that never overflowed
+   themselves. min-width:0 lets the track shrink to the grid's own
+   available space and pushes any real overflow onto the CHILD (which
+   can then scroll/wrap internally) instead of the page layout. */
+.grid{display:grid;gap:18px}
+.grid>*{min-width:0}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g32{grid-template-columns:3fr 2fr}.g23{grid-template-columns:2fr 3fr}
+@media (max-width:1100px){.g2,.g3,.g4,.g32,.g23{grid-template-columns:1fr}}
+/* Narrower still: at <=480px even a single collapsed column can be
+   tight once the action panel's own padding + a 4-button row are
+   accounted for -- tighten panel padding and let buttons wrap onto
+   more lines rather than forcing a min-content floor. */
+@media (max-width:480px){.panel{padding:12px 14px}.action .row2{gap:6px}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.panel.flat{background:transparent;border:0;padding:0}
+.pill{display:inline-block;font:500 11px/1 var(--mono);letter-spacing:.04em;padding:4px 8px;border-radius:4px;background:var(--panel-2);color:var(--ink-2);white-space:nowrap}
+.pill.good{background:var(--good-soft);color:var(--good)}.pill.warn{background:var(--warn-soft);color:var(--warn)}.pill.crit{background:var(--crit-soft);color:var(--crit)}.pill.acc{background:var(--accent-soft);color:var(--accent)}
+.pill.owner{background:var(--ink);color:var(--bg)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{text-align:left;font:500 10.5px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);padding:8px 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:13px}
+td.dim{color:var(--ink-3)}
+.tablewrap{overflow-x:auto}
+.big{font:700 44px/1 var(--disp);letter-spacing:.01em;font-variant-numeric:tabular-nums}
+.big small{font:500 13px/1 var(--mono);color:var(--ink-3);letter-spacing:.04em;margin-left:6px}
+.stat{display:flex;flex-direction:column;gap:6px}
+.stat .lbl{font:500 11px/1.3 var(--mono);color:var(--ink-3);letter-spacing:.05em;text-transform:uppercase}
+.stat .note{color:var(--ink-2);font-size:13px}
+.delta{font-family:var(--mono);font-weight:500}
+.delta.up{color:var(--good)}.delta.down{color:var(--crit)}
+/* pitch */
+.pitch{position:relative;background:linear-gradient(180deg,var(--pitch) 0 25%,var(--pitch-2) 25% 50%,var(--pitch) 50% 75%,var(--pitch-2) 75%);border-radius:8px;padding:18px 14px 14px;min-height:380px;display:grid;grid-template-rows:repeat(4,1fr);gap:8px;overflow:hidden}
+.pitch:before{content:"";position:absolute;inset:10px;border:2px solid var(--pitch-line);border-radius:4px;pointer-events:none}
+.pitch:after{content:"";position:absolute;left:50%;top:10px;bottom:10px;width:0;border-left:2px dashed var(--pitch-line);pointer-events:none;opacity:.35}
+/* OWNER-CAUGHT 2026-09-07 (layout audit): a formation row with 4-5
+   players, each floored at .pl's own min-width:88px, needs 350px+ with
+   no wrap allowed -- at narrow viewports (390px, and even 768px once
+   nav/main padding is subtracted) that is WIDER than the space
+   available. A non-wrapping flex row with a min-content floor this
+   wide forces its GRID TRACK (this sits inside a CSS Grid cell) wider
+   than the viewport, which is the actual mechanism behind "clipped at
+   the right edge" -- not just this row's own overflow, but the whole
+   .g32 grid track (and everything after it) being pushed wide by it.
+   flex-wrap:wrap lets a crowded row fold onto a second line instead. */
+.row{display:flex;flex-wrap:wrap;justify-content:space-evenly;align-items:center;gap:6px;position:relative;z-index:1}
+.pl{background:rgba(255,255,255,.94);color:#1B1F24;border-radius:6px;padding:6px 8px;min-width:88px;text-align:center;font-size:12.5px;line-height:1.25;box-shadow:0 1px 0 rgba(0,0,0,.25);position:relative}
+.pl b{display:block;font-weight:600}
+.pl .xp{font:500 11px/1 var(--mono);color:#4A5158;margin-top:3px}
+.pl .club{display:block;font:500 10px/1.2 var(--sans);color:#7A828A;text-transform:uppercase;letter-spacing:.03em;margin-top:1px}
+.pl .tag{position:absolute;top:-8px;right:-6px;font:600 10px/1 var(--mono);padding:3px 5px;border-radius:3px;background:#1B1F24;color:#fff}
+.pl .tag.tc{background:#B3432B}
+/* OWNER-CAUGHT 2026-09-11: the bench GK budget note ("2nd GK ... above
+   the cheapest option") is a full sentence, not a short corner-badge
+   label -- .tag's own position:absolute (built for 'C'/'IN'/'TC x3')
+   rendered it as a wide box floating directly over the player's own
+   name, making both unreadable. .tag.note drops out of absolute
+   positioning entirely: normal block flow, its own line, below the
+   points -- exactly where a sentence-length note belongs. */
+.pl .tag.note{position:static;display:block;top:auto;right:auto;margin-top:4px;padding:3px 6px;font:500 10.5px/1.3 var(--mono);white-space:normal;text-align:center}
+.pl.new{outline:2px solid #B8811A}
+.bench{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.bench .pl{min-width:0;flex:1;background:var(--panel-2);color:var(--ink);box-shadow:none;border:1px solid var(--line)}
+.bench .pl .xp{color:var(--ink-3)}
+/* bars */
+.bar{height:8px;background:var(--panel-2);border-radius:4px;overflow:hidden;position:relative}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.bar .mark{position:absolute;top:-3px;width:2px;height:14px;background:var(--ink)}
+.chip{display:grid;grid-template-columns:130px 1fr auto;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.chip:last-child{border-bottom:0}
+.chip .name{font-weight:600}
+.chip .name small{display:block;font:400 11.5px/1.3 var(--sans);color:var(--ink-3)}
+.chip .n{font-family:var(--mono);font-size:13px;text-align:right;white-space:nowrap}
+/* action panel */
+.action{border:1px solid var(--line-2);background:var(--panel);border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;gap:12px}
+.action .row2{display:flex;gap:8px;flex-wrap:wrap}
+/* all:unset resets display to its initial value too -- for a <button>
+   that means `inline`, not the browser default `inline-block`. An
+   inline box does not reserve vertical space for padding-top/bottom in
+   layout (it still paints the padding, which is what "clipped" looked
+   like -- the chrome bleeding into and getting cut off against
+   whatever sits above/below it). display:inline-flex restores a real
+   layout box while keeping everything else `all:unset` was for
+   (removing UA button borders/backgrounds/fonts). */
+.btn{all:unset;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font:600 13px/1 var(--sans);padding:10px 14px;border-radius:6px;border:1px solid var(--line-2);color:var(--ink);background:var(--panel)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.danger{color:var(--crit);border-color:var(--crit)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sealed{background:var(--panel-2);border:1px dashed var(--line-2);border-radius:6px;padding:12px 14px;color:var(--ink-2);font-size:13px}
+textarea{width:100%;min-height:64px;font:13px/1.4 var(--sans);padding:8px 10px;border:1px solid var(--line-2);border-radius:6px;background:var(--panel);color:var(--ink);resize:vertical}
+/* flags */
+.flag{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:start;padding:9px 0;border-bottom:1px solid var(--line)}
+.flag:last-child{border-bottom:0}
+.flag .sq{width:10px;height:10px;border-radius:2px;margin-top:5px}
+.flag .sq.warn{background:var(--warn)}.flag .sq.crit{background:var(--crit)}.flag .sq.good{background:var(--good)}.flag .sq.acc{background:var(--accent)}
+.flag b{font-weight:600}.flag small{display:block;color:var(--ink-3);font-size:12px}
+/* timeline */
+.tl{display:grid;grid-template-columns:78px 1fr;gap:0 16px}
+.tl .t{font:500 12px/1.5 var(--mono);color:var(--ink-3);padding:10px 0;border-top:1px solid var(--line)}
+.tl .e{padding:10px 0;border-top:1px solid var(--line)}
+.tl .e b{font-weight:600}
+.tl .e .d{color:var(--ink-2);font-size:13px;margin-top:2px}
+.tl .e .d code{font:12px var(--mono);background:var(--panel-2);padding:1px 5px;border-radius:3px}
+/* chart */
+.chart{width:100%;height:auto;display:block}
+.legend{display:flex;gap:16px;font:12px var(--sans);color:var(--ink-2);margin-top:8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-2px}
+.decomp{font:12px var(--mono);color:var(--ink-2);white-space:nowrap}
+.decomp em{font-style:normal;color:var(--ink)}
+.callout{border-left:3px solid var(--accent);padding:8px 12px;background:var(--accent-soft);border-radius:0 6px 6px 0;color:var(--ink);font-size:13px}
+.callout.warn{border-color:var(--warn);background:var(--warn-soft)}
+kbd{font:12px var(--mono);background:var(--panel-2);border:1px solid var(--line);border-radius:3px;padding:1px 5px}
+</style>
+
+<div class="app">
+  <nav class="nav" role="tablist" aria-label="Pages">
+    <div class="brand">fpl-agent<small id="brand-sub">console · loading…</small></div>
+    <button role="tab" aria-selected="true" data-tab="week">This week <span class="count" id="nav-count-week">–</span></button>
+    <button role="tab" aria-selected="false" data-tab="score">Scorecard <span class="count" id="nav-count-score">–</span></button>
+    <button role="tab" aria-selected="false" data-tab="field">Field <span class="count" id="nav-count-field">–</span></button>
+    <button role="tab" aria-selected="false" data-tab="players">Players <span class="count" id="nav-count-players">–</span></button>
+    <button role="tab" aria-selected="false" data-tab="history">History <span class="count" id="nav-count-history">–</span></button>
+    <button role="tab" aria-selected="false" data-tab="health">Health <span class="count" id="nav-count-health">–</span></button>
+    <button role="tab" aria-selected="false" data-tab="odds">Fixtures &amp; odds</button>
+    <button role="tab" aria-selected="false" data-tab="leagues">Leagues</button>
+    <div class="spacer"></div>
+    <div class="foot" id="build-foot">build: —</div>
+  </nav>
+
+  <main>
+    <!-- OWNER-CAUGHT 2026-09-07 (failure-swallow sweep): every render*()
+         call below is wrapped in try/catch with console.error only -- a
+         throw left that tab's static placeholders in place with NOTHING
+         on the page indicating it, which is exactly how renderStrip's
+         own crash (an undeclared variable, from an incomplete rename)
+         went unnoticed through several real builds. This banner is
+         where renderError() (app.js) writes when any of them throws. -->
+    <div id="render-errors" hidden></div>
+    <div class="strip" id="status-strip">
+      <div class="cell"><span class="k">Next deadline</span><span class="v mono" id="strip-deadline">—</span></div>
+      <div class="cell"><span class="k">Time left to change your mind</span><span class="v mono" id="strip-windows">—</span></div>
+      <div class="cell"><span class="k">Connection to FPL</span><span class="v" id="strip-session">—</span></div>
+      <div class="cell"><span class="k">Model version</span><span class="v mono" id="strip-estimator">—</span></div>
+      <div class="cell"><span class="k">Ongoing issues</span><span class="v" id="strip-flags">—</span></div>
+      <div class="cell"><span class="k">Who decides</span><span class="v" id="strip-autonomy">You do — earliest the system could act on its own is gameweek 7</span></div>
+    </div>
+
+    <!-- SEASON SUMMARY — the real fantasy.premierleague.com Team overview
+         page's own Points & Rankings / Transfers / Finance panels
+         (owner-requested 2026-09-12). Sourced from current.json's
+         season_summary, which is None on any failure -- this renders a
+         plain "unavailable" row rather than a fabricated number. -->
+    <div class="grid g4" id="season-summary" style="margin-top:14px"></div>
+
+    <!-- THIS WEEK -->
+    <section id="tab-week" role="tabpanel">
+      <div class="callout" id="week-proposal-summary" style="margin-bottom:16px;font-size:15px">Loading…</div>
+      <h1 id="week-h1">Gameweek — record of your decision</h1>
+      <p class="sub" id="week-sub">Loading current.json…</p>
+
+      <div class="grid g32">
+        <div class="panel flat">
+          <h2 id="week-xi-h2">Proposed XI</h2>
+          <div class="pitch" id="week-pitch" aria-label="Starting eleven"></div>
+          <div class="bench" id="week-bench"></div>
+        </div>
+
+        <div class="grid" style="gap:18px;align-content:start">
+          <div class="action">
+            <h2 style="margin:0">What would you have done? (write this before scrolling down)</h2>
+            <div class="sealed">Write what you would have decided <em>before</em> you look at the system's own recommendation below. This lets you compare your independent judgment against the system's honestly — the system only starts making its own decisions once its recommendation has matched yours often enough over time.</div>
+            <details id="week-action-settings" style="margin:8px 0;font-size:12.5px">
+              <summary style="cursor:pointer;color:var(--ink-2)">Settings — access code for the buttons below</summary>
+              <div style="display:flex;gap:6px;margin-top:8px;align-items:center">
+                <input type="password" id="week-action-token-input" placeholder="paste your access code"
+                       style="flex:1;font-family:var(--mono);font-size:12.5px;padding:6px 8px" autocomplete="off">
+                <button class="btn" id="week-action-token-save" style="white-space:nowrap">Save</button>
+                <button class="btn" id="week-action-token-clear" style="white-space:nowrap">Clear</button>
+              </div>
+              <p style="margin:6px 0 0;color:var(--ink-3)">Stored only in this browser — never sent anywhere except to confirm it's really you when a button below is used. The buttons stay disabled until a code is saved here.</p>
+            </details>
+            <textarea aria-label="Intended action" placeholder="e.g. Triple Captain Haaland, no wildcard, Wilson → Sangaré on the free"></textarea>
+            <div class="row2">
+              <button class="btn primary" disabled title="Not yet switched on for this console">Save what I would have done</button>
+              <button class="btn" disabled title="Not yet switched on for this console">Approve this week's recommendation</button>
+              <button class="btn danger" disabled title="Not yet switched on for this console">Reject it</button>
+              <button class="btn" disabled title="Not yet switched on for this console">Rule out a chip this week…</button>
+            </div>
+            <div style="font-size:12.5px;color:var(--ink-3)" id="week-action-note">These buttons are not switched on yet — nothing you type here is submitted anywhere. For now, decisions are still entered by you, directly in the FPL app.</div>
+            <div style="font-size:12.5px;color:var(--ink-3);min-height:1.4em" id="week-action-status"></div>
+          </div>
+
+          <div class="panel">
+            <h2>Special one-off moves worth considering (chips)</h2>
+            <p class="sub" style="margin:0 0 10px;max-width:none">Each is judged on its own — using one is never compared against using another.</p>
+            <div id="week-chips"></div>
+            <p id="week-chips-note" style="margin:10px 0 0;font-size:12.5px;color:var(--ink-3)"></p>
+            <div id="week-wildcard-explain" style="margin-top:12px;font-size:13.5px;color:var(--ink-2)"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid g2" style="margin-top:18px">
+        <div class="panel">
+          <h2>Transfers, and why</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Player(s)</th><th class="num">Points change</th><th class="num">Costs points?</th><th>Notes</th></tr></thead>
+            <tbody id="week-transfers-body"></tbody>
+          </table></div>
+        </div>
+        <div class="panel">
+          <h2>Why the captain?</h2>
+          <div class="decomp" id="week-captain-basis" style="white-space:normal;line-height:1.7">—</div>
+          <div class="callout warn" id="week-captain-callout" style="margin-top:12px;display:none"></div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <h2>Why these players, not others at a similar price?</h2>
+        <p class="sub" style="margin:0 0 10px">For every player brought in this week: the other options at a comparable price, and their full projection breakdown, so the margin by which the chosen player won is checkable, not just stated. Only shown for players actually changed this week.</p>
+        <div id="week-contested"></div>
+      </div>
+    </section>
+
+    <!-- SCORECARD -->
+    <section id="tab-score" role="tabpanel">
+      <h1>Scorecard — was the model right?</h1>
+      <p class="sub" id="score-sub">Loading scorecard.json…</p>
+      <div class="grid g3" id="score-stats"></div>
+
+      <div class="grid g23" style="margin-top:18px">
+        <div class="panel">
+          <h2>Decisions graded</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Gameweek</th><th>Decision</th><th class="num">Result</th><th>Grade</th></tr></thead>
+            <tbody id="score-decisions-body"></tbody>
+          </table></div>
+        </div>
+        <div class="panel">
+          <h2>Projected vs actual · XI points</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Gameweek</th><th class="num">Projected</th><th class="num">Actual</th><th class="num">Diff</th></tr></thead>
+            <tbody id="score-gw-body"></tbody>
+          </table></div>
+          <p style="margin:12px 0 0;font-size:12.5px;color:var(--ink-3)">Every row is <code style="font-family:var(--mono)">execution/gw_readout.py</code>'s own output for that gameweek — the page states it, it does not re-derive it.</p>
+        </div>
+      </div>
+
+      <!-- CROSS-GAMEWEEK ACCUMULATION — a section within Scorecard, not an
+           eighth tab. Sourced from analytics.json, built by
+           execution/build_analytics.py. -->
+      <h2 style="margin-top:28px">Across gameweeks</h2>
+      <p class="sub" id="analytics-sub" style="margin-top:2px">Loading analytics.json…</p>
+
+      <div class="panel" style="margin-top:12px">
+        <h2>Estimator version, by gameweek</h2>
+        <p style="margin:0 0 10px;font-size:12.5px;color:var(--ink-3)">Which commit to <code style="font-family:var(--mono)">xp_model.py</code>/<code style="font-family:var(--mono)">odds_model.py</code> was live at each gameweek's own deadline — every figure below is labelled against this.</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Gameweek</th><th>Estimator commit</th><th>Committed</th><th>Subject</th></tr></thead>
+          <tbody id="analytics-versions-body"></tbody>
+        </table></div>
+      </div>
+
+      <div class="grid g2" style="margin-top:18px">
+        <div class="panel">
+          <h2>Calibration · mean projected vs mean actual</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Gameweek</th><th class="num">n</th><th class="num">Mean proj</th><th class="num">Mean actual</th><th class="num">Residual spread</th></tr></thead>
+            <tbody id="analytics-calib-field-body"></tbody>
+          </table></div>
+          <p style="margin:10px 0 0;font-size:12.5px;color:var(--ink-3)">Field-wide. Residual spread is the population stdev of (actual − projected) — a model that is evenly +3/−3 across the field has mean-vs-mean 0.00 and this is the figure that shows it is nonetheless miscalibrated.</p>
+        </div>
+        <div class="panel">
+          <h2>Calibration · proposed XI</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Gameweek</th><th class="num">n</th><th class="num">Mean proj</th><th class="num">Mean actual</th></tr></thead>
+            <tbody id="analytics-calib-xi-body"></tbody>
+          </table></div>
+          <p style="margin:10px 0 0;font-size:12.5px;color:var(--ink-3)" id="analytics-calib-xi-note">A single gameweek's XI is 11 players — always below the honesty gate on its own. The pooled figure across every settled gameweek is what can eventually clear it.</p>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <h2>Calibration deciles · latest settled gameweek</h2>
+        <div class="tablewrap"><table>
+          <thead><tr><th class="num">Decile</th><th class="num">n</th><th class="num">Mean projected</th><th class="num">Mean actual</th></tr></thead>
+          <tbody id="analytics-deciles-body"></tbody>
+        </table></div>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <h2>Estimating points for players with no track record — 4 methods compared</h2>
+        <p style="margin:0 0 10px;font-size:12.5px;color:var(--ink-3)">Covers players with no last-season scoring rate to draw on, who have played at least 60 minutes this season. Two separate scores are shown for each method and never combined into one number, because they measure different kinds of error with different consequences: <b>average miss size</b> (how far off the points estimate typically is) and <b>ranking accuracy</b> (whether the method puts players in the right order relative to each other, even if the exact numbers are off) — a method can win on one and lose on the other. <b>Grouped by gameweek, not by player</b>: every no-track-record player in one gameweek used the same model run, so one gameweek counts as one data point regardless of how many such players it had — the reliability check below is gated on the number of gameweeks measured, not the number of players.</p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Method</th><th class="num">Players covered</th><th class="num">Gameweeks measured</th><th class="num" title="Average miss size — lower is better">Average miss (pts)</th><th class="num" title="Ranking accuracy from -1 (backwards) to 1 (perfect) — higher is better">Ranking accuracy</th></tr></thead>
+          <tbody id="analytics-arms-body"></tbody>
+        </table></div>
+        <p style="margin:10px 0 0;font-size:12.5px;color:var(--ink-3)" id="analytics-arms-note"></p>
+
+        <h2 style="margin-top:20px">Same comparison, gameweek by gameweek</h2>
+        <p style="margin:0 0 10px;font-size:12.5px;color:var(--ink-3)" id="analytics-arms-window-note"></p>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Gameweek</th><th>Method</th><th class="num">Players covered</th><th class="num">Average miss (pts)</th><th class="num">Ranking accuracy</th></tr></thead>
+          <tbody id="analytics-arms-gw-body"></tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- FIELD -->
+    <section id="tab-field" role="tabpanel">
+      <h1>Every player — full projections table</h1>
+      <p class="sub" id="field-sub">Loading field.json…</p>
+      <div class="panel">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px" id="field-pills"></div>
+        <div class="tablewrap"><table>
+          <thead><tr><th class="num">#</th><th>Player</th><th class="num">Price (£m)</th><th class="num" title="The FPL app's own projection for next gameweek">Current form</th><th title="How much last season's rate counts, and how much it's discounted for thin minutes">Last-season rate, if used</th><th class="num" title="1.00 is average difficulty; above is easier, below is harder">Fixture</th><th class="num" title="A separate adjustment blended in from betting-market odds">Betting odds</th><th class="num">Projected points, next gameweek</th><th>Notes</th></tr></thead>
+          <tbody id="field-body"></tbody>
+        </table></div>
+        <p style="margin:12px 0 0;font-size:12.5px;color:var(--ink-3)" id="field-note"></p>
+      </div>
+    </section>
+
+    <!-- PLAYERS — real-world FPL stats, injuries, Team of the Week. Owner-
+         requested 2026-09-12, matching fantasy.premierleague.com's own
+         Team overview / Statistics / Injuries pages directly: "can these
+         3 pages not be reached... at least show me the stats the same
+         way they do." Sourced from players.json (build_players()) --
+         already-happened stats straight from bootstrap, no decision-
+         record dependency, unlike Field above. -->
+    <section id="tab-players" role="tabpanel">
+      <h1>Players — real-world stats, injuries, Team of the Week</h1>
+      <p class="sub" id="players-sub">Loading players.json…</p>
+
+      <div class="grid g2">
+        <div class="panel">
+          <h2>Team of the Week</h2>
+          <p class="sub" style="margin:0 0 10px;max-width:none">FPL's own dream-team pick for the latest gameweek — not recomputed here.</p>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Player</th><th>Team</th><th>Pos</th><th class="num">GW pts</th></tr></thead>
+            <tbody id="players-tow-body"></tbody>
+          </table></div>
+        </div>
+        <div class="panel">
+          <h2>Player availability</h2>
+          <p class="sub" style="margin:0 0 10px;max-width:none" id="players-unavail-sub"></p>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Player</th><th>Team</th><th>Status</th><th>News</th></tr></thead>
+            <tbody id="players-unavail-body"></tbody>
+          </table></div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:18px">
+        <h2>All players — real-world stats</h2>
+        <p class="sub" style="margin:0 0 10px;max-width:none">Straight from the FPL API's own bootstrap data — total points, price, ownership and form, same as the real site's Statistics page. Click a column heading to sort.</p>
+        <div class="tablewrap"><table id="players-table">
+          <thead><tr>
+            <th data-sort="name">Player</th>
+            <th data-sort="team">Team</th>
+            <th data-sort="position">Pos</th>
+            <th class="num" data-sort="price">£</th>
+            <th class="num" data-sort="selected_by_percent">TSB%</th>
+            <th class="num" data-sort="form">Form</th>
+            <th class="num" data-sort="gameweek_points">GW pts</th>
+            <th class="num" data-sort="total_points">TP</th>
+            <th data-sort="status_label">Status</th>
+          </tr></thead>
+          <tbody id="players-body"></tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="tab-history" role="tabpanel">
+      <h1>History — every record, what changed, what you did</h1>
+      <p class="sub" id="history-sub">Loading history.json…</p>
+      <div class="grid g32">
+        <div class="panel">
+          <div class="tl" id="history-tl"></div>
+        </div>
+        <div class="panel">
+          <h2 id="history-diff-h2">Diff · consecutive same-GW records</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Field</th><th class="num">before</th><th class="num">after</th></tr></thead>
+            <tbody id="history-diff-body"></tbody>
+          </table></div>
+          <p style="margin:10px 0 0;font-size:12.5px;color:var(--ink-3)">Only fields that changed are shown, read from each record's own provenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEALTH -->
+    <section id="tab-health" role="tabpanel">
+      <h1>System health — can this be trusted right now?</h1>
+      <p class="sub">Read the probe; re-auth only if it fails; the liveness check says which layer rejected us.</p>
+      <div class="grid g4">
+        <div class="panel stat"><span class="lbl">Session</span><span class="big" id="health-session-big" style="font-size:30px">—</span><span class="note" id="health-session-note">—</span></div>
+        <div class="panel stat"><span class="lbl">Scheduler delivery</span><span class="big" id="health-scheduler-big">—</span><span class="note" id="health-scheduler-note">—</span></div>
+        <div class="panel stat"><span class="lbl">Freeze</span><span class="big" id="health-freeze-big" style="font-size:30px">—</span><span class="note" id="health-freeze-note">—</span></div>
+        <div class="panel stat"><span class="lbl">Strategy drift from GW1</span><span class="big" id="health-strategy-drift-big" style="font-size:30px">—</span><span class="note" id="health-strategy-drift-note">—</span></div>
+      </div>
+      <div class="grid g2" style="margin-top:18px">
+        <div class="panel">
+          <h2>Chronic flags · verdict OK unreachable while any fires</h2>
+          <div id="health-flags"></div>
+        </div>
+        <div class="panel">
+          <h2>Estimator</h2>
+          <div id="health-estimator" style="font-size:13px;color:var(--ink-2)">—</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXTURES & ODDS -->
+    <section id="tab-odds" role="tabpanel">
+      <h1>Fixtures &amp; odds</h1>
+      <p class="sub" id="odds-sub">Loading odds.json…</p>
+      <div class="grid g23">
+        <div class="panel">
+          <h2>Fixture factor by club · next gameweek</h2>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Club</th><th>Opponent</th><th class="num">Win %</th><th class="num">Fixture factor</th></tr></thead>
+            <tbody id="odds-teams-body"></tbody>
+          </table></div>
+          <p style="margin:12px 0 0;font-size:12.5px;color:var(--ink-3)">1.00 is neutral. Taken from the archived betting-market win prices, with the bookmaker's built-in margin removed — the same calculation used for the real decisions, applied to the side of the model that does not already account for the opponent directly.</p>
+        </div>
+        <div class="panel">
+          <h2>Chip windows &amp; DGW/BGW</h2>
+          <div id="odds-chip-windows" style="margin-bottom:14px"></div>
+          <div id="odds-dgw-bgw" style="margin-bottom:14px"></div>
+          <h2 style="margin-top:18px">Field-wide chip usage</h2>
+          <div id="odds-chip-usage"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAGUES -->
+    <section id="tab-leagues" role="tabpanel">
+      <h1>Leagues &amp; results</h1>
+      <p class="sub">Pulled from the FPL API through the Worker proxy.</p>
+      <div class="panel">
+        <p style="margin:0;color:var(--ink-2)">Not built yet — this page can't read league standings directly from the FPL app for technical reasons, and the workaround for that hasn't been wired up.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="app.js"></script>

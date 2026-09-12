@@ -1,0 +1,238 @@
+{
+ "source": {
+  "odds_archive": "gw4_raw.json.gz",
+  "archived_gw": 4,
+  "built_at": "2026-09-12T22:15:53Z"
+ },
+ "teams": [
+  {
+   "id": 1,
+   "short_name": "ARS",
+   "fixture_factor": 1.1677,
+   "p_win": 0.5925,
+   "opponent": "SUN",
+   "home": false
+  },
+  {
+   "id": 2,
+   "short_name": "AVL",
+   "fixture_factor": 1.0412,
+   "p_win": 0.4322,
+   "opponent": "NFO",
+   "home": true
+  },
+  {
+   "id": 5,
+   "short_name": "BHA",
+   "fixture_factor": 1.095,
+   "p_win": 0.5004,
+   "opponent": "COV",
+   "home": false
+  },
+  {
+   "id": 3,
+   "short_name": "BOU",
+   "fixture_factor": 1.0089,
+   "p_win": 0.3913,
+   "opponent": "BRE",
+   "home": true
+  },
+  {
+   "id": 4,
+   "short_name": "BRE",
+   "fixture_factor": 0.9703,
+   "p_win": 0.3424,
+   "opponent": "BOU",
+   "home": false
+  },
+  {
+   "id": 6,
+   "short_name": "CHE",
+   "fixture_factor": 1.3145,
+   "p_win": 0.7784,
+   "opponent": "HUL",
+   "home": true
+  },
+  {
+   "id": 7,
+   "short_name": "COV",
+   "fixture_factor": 0.9011,
+   "p_win": 0.2547,
+   "opponent": "BHA",
+   "home": true
+  },
+  {
+   "id": 8,
+   "short_name": "CRY",
+   "fixture_factor": 1.0911,
+   "p_win": 0.4955,
+   "opponent": "IPS",
+   "home": true
+  },
+  {
+   "id": 9,
+   "short_name": "EVE",
+   "fixture_factor": 0.915,
+   "p_win": 0.2724,
+   "opponent": "TOT",
+   "home": false
+  },
+  {
+   "id": 10,
+   "short_name": "FUL",
+   "fixture_factor": 0.8355,
+   "p_win": 0.1717,
+   "opponent": "LIV",
+   "home": false
+  },
+  {
+   "id": 11,
+   "short_name": "HUL",
+   "fixture_factor": 0.7614,
+   "p_win": 0.0778,
+   "opponent": "CHE",
+   "home": false
+  },
+  {
+   "id": 12,
+   "short_name": "IPS",
+   "fixture_factor": 0.9018,
+   "p_win": 0.2556,
+   "opponent": "CRY",
+   "home": false
+  },
+  {
+   "id": 13,
+   "short_name": "LEE",
+   "fixture_factor": 1.0257,
+   "p_win": 0.4126,
+   "opponent": "NEW",
+   "home": true
+  },
+  {
+   "id": 14,
+   "short_name": "LIV",
+   "fixture_factor": 1.1969,
+   "p_win": 0.6295,
+   "opponent": "FUL",
+   "home": true
+  },
+  {
+   "id": 15,
+   "short_name": "MCI",
+   "fixture_factor": 1.0597,
+   "p_win": 0.4556,
+   "opponent": "MUN",
+   "home": false
+  },
+  {
+   "id": 16,
+   "short_name": "MUN",
+   "fixture_factor": 0.936,
+   "p_win": 0.299,
+   "opponent": "MCI",
+   "home": true
+  },
+  {
+   "id": 17,
+   "short_name": "NEW",
+   "fixture_factor": 0.9497,
+   "p_win": 0.3163,
+   "opponent": "LEE",
+   "home": false
+  },
+  {
+   "id": 18,
+   "short_name": "NFO",
+   "fixture_factor": 0.9274,
+   "p_win": 0.2881,
+   "opponent": "AVL",
+   "home": false
+  },
+  {
+   "id": 20,
+   "short_name": "SUN",
+   "fixture_factor": 0.8247,
+   "p_win": 0.158,
+   "opponent": "ARS",
+   "home": true
+  },
+  {
+   "id": 19,
+   "short_name": "TOT",
+   "fixture_factor": 1.0763,
+   "p_win": 0.4767,
+   "opponent": "EVE",
+   "home": true
+  }
+ ],
+ "chips": {
+  "windows": [
+   {
+    "name": "wildcard",
+    "start_event": 2,
+    "stop_event": 19
+   },
+   {
+    "name": "wildcard",
+    "start_event": 20,
+    "stop_event": 38
+   },
+   {
+    "name": "freehit",
+    "start_event": 2,
+    "stop_event": 19
+   },
+   {
+    "name": "bboost",
+    "start_event": 1,
+    "stop_event": 19
+   },
+   {
+    "name": "3xc",
+    "start_event": 1,
+    "stop_event": 19
+   },
+   {
+    "name": "freehit",
+    "start_event": 20,
+    "stop_event": 38
+   },
+   {
+    "name": "bboost",
+    "start_event": 20,
+    "stop_event": 38
+   },
+   {
+    "name": "3xc",
+    "start_event": 20,
+    "stop_event": 38
+   }
+  ],
+  "field_wide_plays_gw": 3,
+  "field_wide_plays": [
+   {
+    "chip_name": "bboost",
+    "num_played": 144735
+   },
+   {
+    "chip_name": "freehit",
+    "num_played": 421239
+   },
+   {
+    "chip_name": "wildcard",
+    "num_played": 709478
+   },
+   {
+    "chip_name": "3xc",
+    "num_played": 1787071
+   }
+  ]
+ },
+ "dgw_bgw": {
+  "next_gw": 5,
+  "double": [],
+  "blank": [],
+  "note": null
+ }
+}
