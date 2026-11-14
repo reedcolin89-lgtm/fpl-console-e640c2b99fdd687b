@@ -1,0 +1,165 @@
+{
+ "source": {
+  "built_at": "2026-11-14T18:10:10Z",
+  "skipped_records": null
+ },
+ "session": {
+  "idp_status": null,
+  "fpl_status": null,
+  "access_token_exp": null,
+  "checked_at": "2026-11-14T18:10:10Z",
+  "note": "CI minted a fresh session 2026-11-14T16:59:05Z",
+  "last_probe": {
+   "timestamp": "2026-09-06T12:26:55Z",
+   "result": "FAIL"
+  },
+  "secret_updated_at": "2026-10-08T17:32:37Z",
+  "last_reauth_at": "2026-10-08T17:32:37Z",
+  "last_mint_at": "2026-11-14T16:59:05Z",
+  "last_ci_probe_at": "2026-11-14T16:59:04Z",
+  "last_ci_probe_outcome": "success",
+  "dead": false,
+  "dead_since": null,
+  "consecutive_failures": 0,
+  "last_ok_at": "2026-11-14T16:59:04Z"
+ },
+ "chronic_flags": [
+  {
+   "id": "fpl_session_dead",
+   "label": "FPL login",
+   "firing": false,
+   "state": "clear",
+   "value": "no failed check in a row",
+   "threshold": "fires after 2 failed checks in a row"
+  },
+  {
+   "id": "shrinkage_inactive",
+   "label": "Players with a usable last-season record",
+   "firing": false,
+   "state": "clear",
+   "value": "307 of 670",
+   "threshold": "307 active (fires at 0)"
+  },
+  {
+   "id": "odds_stretch",
+   "label": "How much the betting-odds scores need stretching to match ours",
+   "firing": false,
+   "state": "clear",
+   "value": null,
+   "threshold": null
+  },
+  {
+   "id": "scale_gate",
+   "label": "Week-over-week movement in blended scores",
+   "firing": false,
+   "state": "unknown",
+   "value": "not yet measurable",
+   "threshold": null
+  },
+  {
+   "id": "floored_negative",
+   "label": "Players with a negative score, floored to zero",
+   "firing": false,
+   "state": "unknown",
+   "value": "odds_floored_negative absent from this record",
+   "threshold": null
+  },
+  {
+   "id": "zero_credited",
+   "label": "Betting-odds points credited to players with no scoring history",
+   "firing": false,
+   "state": "unknown",
+   "value": "odds_zero_credited absent from this record",
+   "threshold": null
+  },
+  {
+   "id": "estimator_unvalidated",
+   "label": "Time since the scoring model last changed vs the last settled gameweek",
+   "firing": false,
+   "state": "clear",
+   "value": null,
+   "threshold": "fires if the estimator changed AFTER the last settled gameweek's deadline -- binary, no magnitude"
+  },
+  {
+   "id": "h1_guard_errored",
+   "label": "Per-transfer marginal-hit guard computation error",
+   "firing": false,
+   "state": "clear",
+   "value": null,
+   "threshold": "fires if the guard's own computation raised -- binary, no magnitude"
+  },
+  {
+   "id": "horizon_check_errored",
+   "label": "Horizon-degeneracy check computation error",
+   "firing": false,
+   "state": "clear",
+   "value": null,
+   "threshold": "fires if the check's own computation raised -- binary, no magnitude"
+  },
+  {
+   "id": "scout_health",
+   "label": "Injury/team-news provider corroboration",
+   "firing": false,
+   "state": "clear",
+   "value": "2/2 responded \u2014 corroboration possible (agreement still rules out a single model's own hallucination, but both share one OpenRouter account, so it no longer rules out a shared-account failure)",
+   "threshold": "fires when fewer than 2 provider(s) respond ok/ok-empty this pass"
+  },
+  {
+   "id": "wildcard_rescue_guard",
+   "label": "Wildcard rescue-condition guard status",
+   "firing": false,
+   "state": "clear",
+   "value": "guard ran cleanly \u2014 0 squad player(s) unavailable this pass, rescue condition did not fire",
+   "threshold": null
+  },
+  {
+   "id": "ci_tests_failing",
+   "label": "Automated test results on the latest code",
+   "firing": true,
+   "state": "firing",
+   "value": "at least one suite failed or the job crashed -- see the linked run",
+   "threshold": "fires on any status other than a confirmed 'success' -- binary, no magnitude ('unknown' is its own third state, see above)",
+   "link": "https://github.com/reedcolin89-lgtm/fpl-agent/actions/runs/43618457472"
+  },
+  {
+   "id": "secret_write_token",
+   "label": "GitHub token that saves the FPL login",
+   "threshold": "fires on a failed save, a rejected token, or <= 14 days to expiry",
+   "firing": false,
+   "state": "info",
+   "value": "GitHub reports no expiry for this token (none set, or not exposed)"
+  }
+ ],
+ "estimator": {},
+ "freeze": {
+  "stamped": true,
+  "n_files": 12
+ },
+ "strategy_drift": {
+  "status": "ok",
+  "n_values_compared": 38,
+  "n_differences": 2,
+  "differences": [
+   {
+    "key": "chips.first_half.wildcard.trigger_xp_gain",
+    "gw1": 12.0,
+    "live": 50.0
+   },
+   {
+    "key": "chips.second_half.wildcard.trigger_xp_gain",
+    "gw1": 12.0,
+    "live": 50.0
+   }
+  ],
+  "note": "2 of 38 values have moved since GW1 \u2014 drift is expected under the 2026-09-08 checkpoint governance, this is information, not a fault"
+ },
+ "scheduler": {
+  "note": "not measured"
+ },
+ "ci_tests": {
+  "status": "skipped",
+  "run_url": "https://github.com/reedcolin89-lgtm/fpl-agent/actions/runs/43618457472",
+  "run_started_at": "2026-11-14T16:57:51Z",
+  "note": "at least one suite failed or the job crashed -- see the linked run"
+ }
+}
