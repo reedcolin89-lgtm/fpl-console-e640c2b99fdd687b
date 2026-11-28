@@ -1,0 +1,3 @@
+# fpl-agent console: not for search engines (readiness check R4, 2026-11-20).
+User-agent: *
+Disallow: /
